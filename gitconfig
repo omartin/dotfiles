@@ -1,0 +1,41 @@
+[core]
+  excludesfile = ~/.gitignore
+[alias]
+  br = branch
+  ci = commit
+  di = diff
+  st = status
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+  lt = log --tags --simplify-by-decoration --pretty="format:%ai %d"
+  co = checkout
+  aa = add --all :/
+  hist = log --oneline --decorate
+[color]
+  ui = auto 
+  branch = auto
+  status = auto
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[color "branch"]
+  current = white reverse
+  local = white
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[merge]
+  tool = vimdiff
+[push]
+  default = upstream
+[diff]
+  tool = vimdiff
+[credential]
+  helper = cache --timeout 3600
+[branch]
+  autosetuprebase = always
