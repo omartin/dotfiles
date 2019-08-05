@@ -12,6 +12,7 @@
     ln -s ~/.dotfiles/ctags ~/.ctags
     ln -s ~/.dotfiles/prettierrc ~/.prettierrc
     ln -s ~/.dotfiles/mongorc.js ~/.mongorc.js
+    ln -s ~/.dotfiles/xvimrc ~/.xvimrc
 ```
 
 Useful 3rd parties:

@@ -1,0 +1,51 @@
+" -----------------------------------
+" XVim configuration file
+" -----------------------------------
+set laststatus=0
+set relativenumber
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" View
+" Note: standard editor shortkey is convenient
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" toggle navigator, debug area, utilities, ToolBar  
+" l-left, b-bottom, r-right, t-top or toolbar
+map ,tl :xccmd toggleNavigatorsVisibility<CR>
+map ,td :xccmd toggleDebuggerVisibility<CR>
+map ,tr :xccmd toggleUtilitiesVisibility<CR>
+map ,tt :xccmd toggleToolbarShown<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Navigate
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" dc-debug console
+map ,dc :xcmenucmd Activate Console<CR>
+map ,jn :xcmenucmd Jump to Next Issue<CR>
+map ,jp :xcmenucmd Jump to Previous Issue<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Editor
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fold
+nnoremap <SPACE> :xccmd fold<CR>
+nnoremap zz :xccmd unfold<CR>
+nnoremap <C-z> :xccmd unfoldAll<CR>
+        map ,fa :xccmd foldAllMethods<CR>
+        map ,ua :xccmd unfoldAllMethods<CR>
+        map ,fc :xccmd foldAllComments<CR>
+        map ,uc :xccmd unfoldAllComments<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Miscellaneous
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set ignorecase
+
+" search the string cursor points to. Very Useful
+map ,s viw:xccmd findSelectedTextInWorkspace<CR>
+
+" Open Quickly
+" Note: slower then short key |cmd+shift+o|
+map ,o  :xccmd openQuickly<CR>
+" show in Finder
+map ,in  :xccmd showInFinder<CR>
