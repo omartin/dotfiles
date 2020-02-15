@@ -13,7 +13,6 @@
     ln -s ~/.dotfiles/prettierrc ~/.prettierrc
     ln -s ~/.dotfiles/mongorc.js ~/.mongorc.js
     ln -s ~/.dotfiles/xvimrc ~/.xvimrc
-    ln -s ~/.dotfiles/settings.json  ~/Library/Application\ Support/Code/User/settings.json
 ```
 
 Useful 3rd parties:
