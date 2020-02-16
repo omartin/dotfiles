@@ -8,7 +8,6 @@
     ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
     ln -s ~/.dotfiles/tmuxinator ~/.tmuxinator
     ln -s ~/.dotfiles/tern-config ~/.tern-config
-    ln -s ~/.dotfiles/oni ~/.config/oni
     ln -s ~/.dotfiles/ctags ~/.ctags
     ln -s ~/.dotfiles/prettierrc ~/.prettierrc
     ln -s ~/.dotfiles/mongorc.js ~/.mongorc.js
