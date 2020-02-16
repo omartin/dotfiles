@@ -8,6 +8,7 @@ source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+export EDITOR=nvim
 
 alias vi=nvim
 alias vim=nvim
