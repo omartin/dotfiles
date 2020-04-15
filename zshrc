@@ -6,6 +6,8 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git colored-man-pages vi-mode tmux heroku)
 source $ZSH/oh-my-zsh.sh
 source <(kubectl completion zsh)
+setopt no_share_history
+unsetopt share_history
 
 export LANG=en_US.UTF-8
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
