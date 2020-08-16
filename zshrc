@@ -12,6 +12,8 @@ unsetopt share_history
 export LANG=en_US.UTF-8
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 export EDITOR=nvim
+export FZF_DEFAULT_COMMAND='rg --files'
+
 
 alias vi=nvim
 alias vim=nvim
