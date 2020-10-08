@@ -12,6 +12,7 @@
     ln -s ~/.dotfiles/prettierrc ~/.prettierrc
     ln -s ~/.dotfiles/mongorc.js ~/.mongorc.js
     ln -s ~/.dotfiles/xvimrc ~/.xvimrc
+    ln -s ~/.dotfiles/alacritty.yml ~/.alacritty.yml
 ```
 
 Useful 3rd parties:
