@@ -18,6 +18,7 @@ export FZF_DEFAULT_COMMAND='rg --files'
 alias vi=nvim
 alias vim=nvim
 alias k=kubectl
+alias rgf='rg --files | rg'
 
 # Local bindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
