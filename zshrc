@@ -1,9 +1,9 @@
 # Main configuration
 export ZSH="/Users/olive/.oh-my-zsh"
-ZSH_THEME="afowler"
+ZSH_THEME="agnoster"
 DEFAULT_USER=olive
 DISABLE_AUTO_UPDATE="true"
-plugins=(git colored-man-pages vi-mode tmux heroku)
+plugins=(git colored-man-pages vi-mode tmux)
 source $ZSH/oh-my-zsh.sh
 source <(kubectl completion zsh)
 setopt no_share_history
@@ -23,3 +23,4 @@ alias rgf='rg --files | rg'
 # Local bindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc-local ] && source ~/.zshrc-local
+[ -f ~/.dotfiles/zsh/prompt.zsh ] && source ~/.dotfiles/zsh/prompt.zsh
