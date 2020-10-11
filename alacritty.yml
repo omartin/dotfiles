@@ -164,11 +164,11 @@ font:
 draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+  primary:
+    background: '#1c1c1c'
+    foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
     #
@@ -184,7 +184,7 @@ draw_bold_text_with_bright_colors: true
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
+  #cursor
   #  text: CellBackground
   #  cursor: CellForeground
 
@@ -224,14 +224,14 @@ draw_bold_text_with_bright_colors: true
 
   # Normal colors
   #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+    #black:   '#1d1f21'
+    #red:     '#cc6666'
+    #green:   '#b5bd68'
+    #yellow:  '#f0c674'
+    #blue:    '#81a2be'
+    #magenta: '#b294bb'
+    #cyan:    '#8abeb7'
+    #white:   '#c5c8c6'
 
   # Bright colors
   #bright:
@@ -267,41 +267,6 @@ draw_bold_text_with_bright_colors: true
   #   `- { index: 16, color: '#ff00ff' }`
   #
   #indexed_colors: []
-
-# Base16 Black Metal (Marduk) - alacritty color config
-# metalelf0 (https://github.com/metalelf0)
-colors:
-  # Default colors
-  primary:
-    background: '0x000000'
-    foreground: '0xc1c1c1'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x000000'
-    cursor: '0xc1c1c1'
-
-  # Normal colors
-  normal:
-    black:   '0x000000'
-    red:     '0x5f8787'
-    green:   '0xa5aaa7'
-    yellow:  '0x626b67'
-    blue:    '0x888888'
-    magenta: '0x999999'
-    cyan:    '0xaaaaaa'
-    white:   '0xc1c1c1'
-
-  # Bright colors
-  bright:
-    black:   '0x333333'
-    red:     '0xaaaaaa'
-    green:   '0x121212'
-    yellow:  '0x222222'
-    blue:    '0x999999'
-    magenta: '0x999999'
-    cyan:    '0x444444'
-    white:   '0xc1c1c1'
 
 
 # Bell
