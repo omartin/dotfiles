@@ -93,7 +93,20 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Consolas NF
+    #family: Agave Nerd Font
+    #family: BitstreamVeraSansMono Nerd Font
+    #family: CaskaydiaCove Nerd Font
+    #family: Cousine Nerd Font
+    family: DroidSansMono Nerd Font
+    #family: FiraCode Nerd Font
+    #family: FiraMono Nerd Font
+    #family: Hack Nerd Font
+    #family: Mononoki Nerd Font
+    #family: NotoMono Nerd Font
+    #family: SauceCodePro Nerd Font
+    #family: UbuntuMono Nerd Font
+
+    #family: Consolas NF
     # Font family
     #
     # Default:
@@ -139,7 +152,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 14.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
