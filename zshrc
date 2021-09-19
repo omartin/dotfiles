@@ -22,6 +22,10 @@ alias k=kubectl
 alias rgf='rg --files | rg'
 alias nr='npm run'
 
+# NVM
+ export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+
 # Local bindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc-local ] && source ~/.zshrc-local
