@@ -2,24 +2,28 @@
 ```
     git clone git@github.com:omartin/dotfiles.git ~/.dotfiles
     touch ~/.zshrc-local
-    ln -s ~/.dotfiles/zshrc ~/.zshrc
-    ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-    ln -s ~/.dotfiles/gitignore ~/.gitignore
-    ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-    ln -s ~/.dotfiles/tmuxinator ~/.tmuxinator
-    ln -s ~/.dotfiles/tern-config ~/.tern-config
-    ln -s ~/.dotfiles/ctags ~/.ctags
-    ln -s ~/.dotfiles/prettierrc ~/.prettierrc
-    ln -s ~/.dotfiles/mongorc.js ~/.mongorc.js
-    ln -s ~/.dotfiles/xvimrc ~/.xvimrc
-    ln -s ~/.dotfiles/alacritty.yml ~/.alacritty.yml
+    #ln -sf ~/.dotfiles/zshrc ~/.zshrc
+    ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
+    ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
+    ln -sf ~/.dotfiles/gitignore ~/.gitignore
+    ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
+    ln -sf ~/.dotfiles/tmuxinator ~/.tmuxinator
+    ln -sf ~/.dotfiles/tern-config ~/.tern-config
+    ln -sf ~/.dotfiles/ctags ~/.ctags
+    ln -sf ~/.dotfiles/prettierrc ~/.prettierrc
+    ln -sf ~/.dotfiles/mongorc.js ~/.mongorc.js
+    ln -sf ~/.dotfiles/xvimrc ~/.xvimrc
+    ln -sf ~/.dotfiles/alacritty.yml ~/.alacritty.yml
 ```
 
-Useful 3rd parties:
+3rd parties:
 ```
     brew cask install quicklook-json
     brew tap homebrew/cask-fonts && brew install --cask font-noto-nerd-font
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+    git clone https://github.com/mroth/evalcache ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/evalcache
+
 ```
 
 Finally :

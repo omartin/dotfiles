@@ -6,6 +6,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git colored-man-pages vi-mode tmux zsh-autosuggestions)
 bindkey '  ' autosuggest-accept
 source $ZSH/oh-my-zsh.sh
+
 source <(kubectl completion zsh)
 setopt no_share_history
 unsetopt share_history
@@ -24,4 +25,3 @@ alias nr='npm run'
 # Local bindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc-local ] && source ~/.zshrc-local
-[ -f ~/.dotfiles/zsh/prompt.zsh ] && source ~/.dotfiles/zsh/prompt.zsh
