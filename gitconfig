@@ -8,8 +8,7 @@
   unstage = reset HEAD --
   last = log -1 HEAD
   lb = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
-  lt = log --tags --simplify-by-decoration --pretty="format:%ai %d"
+  lg = log --exclude=deployment --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --exclude='deployment*' --branches
   co = checkout
   aa = add --all :/
   hist = log --oneline --decorate

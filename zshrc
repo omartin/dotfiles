@@ -3,7 +3,7 @@ export ZSH="/Users/olive/.oh-my-zsh"
 ZSH_THEME="sorin"
 DEFAULT_USER=olive
 DISABLE_AUTO_UPDATE="true"
-plugins=(git colored-man-pages vi-mode tmux zsh-autosuggestions)
+plugins=(evalcache git colored-man-pages vi-mode tmux zsh-autosuggestions)
 bindkey '  ' autosuggest-accept
 source $ZSH/oh-my-zsh.sh
 
