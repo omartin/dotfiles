@@ -11,6 +11,7 @@
     ~/.gitignore: git/gitignore
     ~/.alacritty.yml: alacritty/alacritty.yml
     ~/.config/nvim: neovim
+    ~/.config/kitty: kitty
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
