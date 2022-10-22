@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zsh/zshrc
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore: git/gitignore
+    ~/.alacritty.yml: alacritty/alacritty.yml
+    ~/.config/nvim: neovim
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [Touch ~/.zshrc-local]
