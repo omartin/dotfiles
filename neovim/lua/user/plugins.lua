@@ -73,6 +73,7 @@ return packer.startup(function(use)
   -- git
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use "rhysd/git-messenger.vim"
+  use "APZelos/blamer.nvim"
 
   -- lualine
   use "nvim-lualine/lualine.nvim"
@@ -103,6 +104,12 @@ return packer.startup(function(use)
 
   -- tab
   use "alvarosevilla95/luatab.nvim"
+
+  -- aerial
+  use { 
+    "stevearc/aerial.nvim",
+    config = function() require("aerial").setup() end,
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
