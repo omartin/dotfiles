@@ -120,6 +120,7 @@ local mappings = {
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
     d = { "<cmd>Gitsigns diffthis HEAD<cr>", "Diff" },
+    m = { "<cmd>GitMessenger<cr>", "Show history" },
   },
 
   l = {

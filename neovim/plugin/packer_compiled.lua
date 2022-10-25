@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/formatter.nvim",
     url = "https://github.com/mhartington/formatter.nvim"
   },
+  ["git-messenger.vim"] = {
+    loaded = true,
+    path = "/Users/olive/.local/share/nvim/site/pack/packer/start/git-messenger.vim",
+    url = "https://github.com/rhysd/git-messenger.vim"
+  },
   ["github_dark.nvim"] = {
     loaded = true,
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/github_dark.nvim",
