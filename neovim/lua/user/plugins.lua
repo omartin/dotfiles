@@ -105,12 +105,6 @@ return packer.startup(function(use)
   -- tab
   use "alvarosevilla95/luatab.nvim"
 
-  -- aerial
-  use { 
-    "stevearc/aerial.nvim",
-    config = function() require("aerial").setup() end,
-  }
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
