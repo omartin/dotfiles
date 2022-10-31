@@ -6,7 +6,7 @@ git clone https://github.com/omartin/dotfiles ~/.dotfiles && cd ~/.dotfiles && .
 
 3rd parties
 ```
-    brew install nvm ripgrep ag
+    brew install nvm ripgrep ag caarlos0/tap/timer
     brew install quicklook-json --cask
     brew tap homebrew/cask-fonts && brew install --cask font-noto-nerd-font
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
