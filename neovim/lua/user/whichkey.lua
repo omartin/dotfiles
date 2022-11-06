@@ -95,7 +95,7 @@ local mappings = {
   },
   ["F"] = { "<cmd>NvimTreeClose<cr><cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["t"] = { "<cmd>tabnew<CR>", "New Tab" },
-  ["="] = { "<cmd>:Format<CR>", "Format" },
+  ["="] = { "<cmd>lua vim.lsp.buf.format { async = true }<CR>", "Format" },
 
   p = {
     name = "Packer",

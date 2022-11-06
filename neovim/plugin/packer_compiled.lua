@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["formatter.nvim"] = {
-    loaded = true,
-    path = "/Users/olive/.local/share/nvim/site/pack/packer/start/formatter.nvim",
-    url = "https://github.com/mhartington/formatter.nvim"
-  },
   ["git-messenger.vim"] = {
     loaded = true,
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/git-messenger.vim",
@@ -139,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["lsp-format.nvim"] = {
+    loaded = true,
+    path = "/Users/olive/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
+    url = "https://github.com/lukas-reineke/lsp-format.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -153,11 +153,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
     url = "https://github.com/tamago324/nlsp-settings.nvim"
-  },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "/Users/olive/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-base16"] = {
     loaded = true,

@@ -84,9 +84,6 @@ return packer.startup(function(use)
   -- colorizer
   use "norcalli/nvim-colorizer.lua"
 
-  -- formatter
-  use "mhartington/formatter.nvim"
-
   -- treesitter
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
@@ -95,7 +92,7 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   --use "williamboman/mason" -- SEE LATER, replaces the above ^
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "lukas-reineke/lsp-format.nvim" -- formatting
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-buffer" -- buffer completions
