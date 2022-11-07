@@ -1,3 +1,17 @@
+require "plugins.whichkey"
+require "plugins.nvim-tree"
+require "plugins.telescope"
+require "plugins.trouble"
+require "plugins.gitsigns"
+require "plugins.git-messenger"
+require "plugins.blamer"
+require "plugins.lualine"
+require "plugins.indentline"
+require "plugins.colorizer"
+require "plugins.treesitter"
+require "plugins.completion"
+require "plugins.luatab"
+
 local fn = vim.fn
 
 -- Automatically install packer
@@ -19,7 +33,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost init.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -108,3 +122,4 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
+
