@@ -33,6 +33,7 @@
   tool = vimdiff
 [push]
   default = upstream
+	autoSetupRemote = true
 [diff]
   tool = vimdiff
 [credential]
