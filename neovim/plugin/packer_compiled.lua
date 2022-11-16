@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/luatab.nvim",
     url = "https://github.com/alvarosevilla95/luatab.nvim"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/olive/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/Users/olive/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",

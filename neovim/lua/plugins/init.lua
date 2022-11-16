@@ -68,6 +68,7 @@ return packer.startup(function(use)
   use "rafi/awesome-vim-colorschemes"
   use "luisiacc/gruvbox-baby"  
   use "lewis6991/github_dark.nvim"
+  use "EdenEast/nightfox.nvim"
 
   -- which-key
   use "folke/which-key.nvim"

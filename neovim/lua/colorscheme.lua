@@ -1,4 +1,4 @@
-local colorscheme = "ferrum" -- ferrum alduin base16-atelier-savanna base16-default-dark nord tomorrow, iceberg, hybrid, sierra
+local colorscheme = "nightfox" -- nightfox ferrum alduin base16-atelier-savanna base16-default-dark nord tomorrow, iceberg, hybrid, sierra
 -- aurora.vim darkplus.vim onedarker.vim spacedark.vim system76.vim tomorrow.vim gruvbox-baby
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
