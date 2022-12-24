@@ -89,7 +89,7 @@ local mappings = {
     "Find files",
   },
   ["F"] = { "<cmd>NvimTreeClose<cr><cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-  ["n"] = { "<cmd>tabnew<CR>", "New Tab" },
+  ["t"] = { "<cmd>tabnew<CR>", "New Tab" },
   ["="] = { "<cmd>lua vim.lsp.buf.format { async = true }<CR>", "Format" },
 
   p = {
@@ -115,7 +115,7 @@ local mappings = {
     d = { "<cmd>Telescope lsp_definitions<cr>", "Definitions" },
   },
 
-  t = {
+  s = {
     name = "Telescope",
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
