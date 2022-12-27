@@ -9,7 +9,7 @@ require "plugins.lualine"
 require "plugins.indentline"
 require "plugins.colorizer"
 require "plugins.treesitter"
-require "plugins.completion"
+require "plugins.lsp"
 require "plugins.luatab"
 
 local fn = vim.fn
@@ -103,16 +103,27 @@ return packer.startup(function(use)
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
   -- lsp
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  --use "williamboman/mason" -- SEE LATER, replaces the above ^
-  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "lukas-reineke/lsp-format.nvim" -- formatting
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "L3MON4D3/LuaSnip"
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'},
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},
+      {'hrsh7th/cmp-buffer'},
+      {'hrsh7th/cmp-path'},
+      {'saadparwaiz1/cmp_luasnip'},
+      {'hrsh7th/cmp-nvim-lsp'},
+      {'hrsh7th/cmp-nvim-lua'},
+
+      -- Snippets
+      {'L3MON4D3/LuaSnip'},
+      {'rafamadriz/friendly-snippets'},
+    }
+  }
 
   -- tab
   use "alvarosevilla95/luatab.nvim"
