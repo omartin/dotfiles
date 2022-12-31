@@ -18,6 +18,7 @@ autocmd BufEnter * hi TabLineFill guibg=#181818
 
 autocmd BufEnter * hi Pmenu guibg=#181818
 autocmd BufEnter * hi FloatBorder guibg=#181818
+autocmd BufEnter * hi NormalFloat guibg=#181818
 
 autocmd BufEnter * hi VertSplit guifg=#242424 guibg=#242424
 autocmd BufEnter * hi NvimTreeNormal guibg=#242424
@@ -25,16 +26,3 @@ autocmd BufEnter * hi NvimTreeNormal guibg=#242424
 autocmd BufEnter * hi WhichKeyFloat guibg=#181818
 
 ]]
-
---[[
-vim.cmd [[
-autocmd BufEnter * hi TabLine guibg=#181818
-autocmd BufEnter * hi TabLineSel guifg=#FFFFFF guibg=#181818
-autocmd BufEnter * hi TabLineFill guibg=#181818
-autocmd BufEnter * hi Normal guibg=#181818
-autocmd BufEnter * hi LineNr guibg=#181818
-autocmd BufEnter * hi SignColumn guibg=#181818
-autocmd BufEnter * hi Pmenu guibg=#181818
-autocmd BufEnter * hi PmenuThumb guibg=#181818
-]]
---]]
