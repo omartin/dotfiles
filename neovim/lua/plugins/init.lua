@@ -11,6 +11,7 @@ require "plugins.colorizer"
 require "plugins.treesitter"
 require "plugins.lsp"
 require "plugins.luatab"
+require "plugins.toggleterm"
 
 local fn = vim.fn
 
@@ -129,12 +130,7 @@ return packer.startup(function(use)
   use "alvarosevilla95/luatab.nvim"
 
   -- term
-  use {
-    "akinsho/toggleterm.nvim", tag = '*',
-    config = function()
-      require("toggleterm").setup()
-    end
-  }
+  use { "akinsho/toggleterm.nvim", tag = '*' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
