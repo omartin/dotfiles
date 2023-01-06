@@ -128,6 +128,14 @@ return packer.startup(function(use)
   -- tab
   use "alvarosevilla95/luatab.nvim"
 
+  -- term
+  use {
+    "akinsho/toggleterm.nvim", tag = '*',
+    config = function()
+      require("toggleterm").setup()
+    end
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
