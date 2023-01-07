@@ -49,3 +49,7 @@ keymap("n", "<S-Tab>", ":tabprevious<CR>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 keymap("v", "p", '"_dP', opts)
+
+-- TERMINAL --
+keymap("t", "<Esc>", "<C-\\><C-n>", opts)
+
