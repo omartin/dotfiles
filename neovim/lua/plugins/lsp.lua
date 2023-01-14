@@ -1,8 +1,29 @@
-local status_ok, lsp = pcall(require, "lsp-zero")
-if not status_ok then
-  print('lsp-zero unavailable')
-  return
-end
+return {
+  {
+    'VonHeikemen/lsp-zero.nvim',
+    dependencies = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'},
 
-lsp.preset('recommended')
-lsp.setup()
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},
+      {'hrsh7th/cmp-buffer'},
+      {'hrsh7th/cmp-path'},
+      {'saadparwaiz1/cmp_luasnip'},
+      {'hrsh7th/cmp-nvim-lsp'},
+      {'hrsh7th/cmp-nvim-lua'},
+
+      -- Snippets
+      {'L3MON4D3/LuaSnip'},
+      {'rafamadriz/friendly-snippets'},
+    },
+    config = 
+      function()
+        local lsp = require("lsp-zero")
+        lsp.preset("recommended")
+        lsp.setup()
+      end,
+  }
+}
