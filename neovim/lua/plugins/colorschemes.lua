@@ -2,13 +2,13 @@ return {
   { 
     "catppuccin/nvim",
     name = "catppuccin",
-    opts = {
-      flavour = "latte", -- latte, frappe, macchiato, mocha
-    },
-    --config = function() vim.cmd([[colorscheme catppuccin]]) end,
+    config = function() vim.cmd("colorscheme catppuccin-mocha") end,
   },
-  { 
-    "projekt0n/github-nvim-theme",
-    config = function() vim.cmd([[colorscheme github_dark]]) end,
-  }
+  --"projekt0n/github-nvim-theme",
+  --"RRethy/nvim-base16", -- A bunch of color schemes based on base 16
+  --"LunarVim/Colorschemes", -- LunarVim specific color schemes
+  --"rafi/awesome-vim-colorschemes",
+  --"luisiacc/gruvbox-baby",
+  --"lewis6991/github_dark.nvim",
+  --"EdenEast/nightfox.nvim",
 }
