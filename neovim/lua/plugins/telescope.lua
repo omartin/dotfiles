@@ -25,7 +25,8 @@ return {
     { "<leader>F", "<cmd>Telescope live_grep theme=ivy<cr>", desc = "Live grep files" },
     { "<leader>sc", "<cmd>Telescope colorscheme<cr>", desc = "Colorscheme" },
     { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Find Help" },
-    { "<leader>sr", "<cmd>Telescope oldfiles<cr>", desc = "Open Recent File" },
+    { "<leader>sr", "<cmd>Telescope lsp_references<cr>", desc = "References" },
+    { "<leader>sd", "<cmd>Telescope lsp_definitions<cr>", desc = "Definitions" },
   },
 
   --[[
