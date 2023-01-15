@@ -15,29 +15,12 @@ return {
         mode = { "n", "v" },
         ["<leader>s"] = { name = "+Search" },
         ["<leader>g"] = { name = "+Git" },
-        --["e"] = { "<cmd>NvimTreeFindFileToggle<cr>", "Explorer" },
-        --["w"] = { "<cmd>w!<CR>", "Save" },
-        --["Q"] = { "<cmd>qa!<CR>", "Quit all" },
-        --["c"] = { "<cmd>q<CR>", "Close window" },
-        --[[
-        ["f"] = {
-          "<cmd>NvimTreeClose<cr><cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-          "Find files",
-        },
-        ["t"] = { "<cmd>tabnew<CR>", "New Tab" },
-        ["="] = { "<cmd>lua vim.lsp.buf.format { async = true }<CR>", "Format" },
-
-        g = {
-          name = "Git",
-        },
-
-        x = {
-          name = "Trouble",
-          x = { "<cmd>TroubleToggle<cr>", "Toggle" },
-          w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
-          d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Document Diagnostics" },
-        }
-        --]]
+        ["<leader>x"] = { name = "+Diagnostics" },
+        ["<leader>t"] = { "<cmd>tabnew<CR>", "New Tab" },
+        ["<leader>w"] = { "<cmd>w!<CR>", "Save" },
+        ["<leader>Q"] = { "<cmd>qa!<CR>", "Quit all" },
+        ["<leader>c"] = { "<cmd>q<CR>", "Close window" },
+        ["<leader>="] = { "<cmd>lua vim.lsp.buf.format { async = true }<CR>", "Format" },
       })
     end,
   }}
