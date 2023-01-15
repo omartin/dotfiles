@@ -27,6 +27,7 @@ return {
     { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Find Help" },
     { "<leader>sr", "<cmd>Telescope lsp_references<cr>", desc = "References" },
     { "<leader>sd", "<cmd>Telescope lsp_definitions<cr>", desc = "Definitions" },
+    { "<leader>gs", "<cmd>Telescope git_status<cr>", desc = "Status" },
   },
 
   --[[

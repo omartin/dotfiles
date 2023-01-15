@@ -14,6 +14,7 @@ return {
       wk.register({
         mode = { "n", "v" },
         ["<leader>s"] = { name = "+Search" },
+        ["<leader>g"] = { name = "+Git" },
         --["e"] = { "<cmd>NvimTreeFindFileToggle<cr>", "Explorer" },
         --["w"] = { "<cmd>w!<CR>", "Save" },
         --["Q"] = { "<cmd>qa!<CR>", "Quit all" },
@@ -28,11 +29,6 @@ return {
 
         g = {
           name = "Git",
-          j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
-          k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
-          l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
-          s = { "<cmd>Telescope git_status<cr>", "Status" },
-          d = { "<cmd>Gitsigns diffthis HEAD<cr>", "Diff" },
         },
 
         x = {
