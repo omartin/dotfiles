@@ -1,8 +1,12 @@
 return {
-  { 
+  {
     "catppuccin/nvim",
     name = "catppuccin",
-    config = function() vim.cmd("colorscheme catppuccin-mocha") end,
+    -- config = function() vim.cmd("colorscheme catppuccin-mocha") end,
+  },
+  {
+    "rose-pine/neovim",
+    config = function() vim.cmd("colorscheme rose-pine") end,
   },
   --"projekt0n/github-nvim-theme",
   --"RRethy/nvim-base16", -- A bunch of color schemes based on base 16
