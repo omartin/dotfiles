@@ -10,12 +10,15 @@ return {
       require("rose-pine").setup({
         --dark_variant = 'moon',
       })
-      vim.cmd("colorscheme rose-pine")
+      --vim.cmd("colorscheme rose-pine")
     end,
   },
   --"projekt0n/github-nvim-theme",
   --"RRethy/nvim-base16", -- A bunch of color schemes based on base 16
-  --"LunarVim/Colorschemes", -- LunarVim specific color schemes
+  { 
+    "LunarVim/Colorschemes", -- LunarVim specific color schemes
+    config = function() vim.cmd("colorscheme darkplus") end,
+  }
   --"rafi/awesome-vim-colorschemes",
   --"luisiacc/gruvbox-baby",
   --"lewis6991/github_dark.nvim",
