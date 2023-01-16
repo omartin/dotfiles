@@ -6,10 +6,12 @@ return {
   },
   {
     "rose-pine/neovim",
-    opts = {
-      dark_variant = 'moon',
-    },
-    config = function() vim.cmd("colorscheme rose-pine") end,
+    config = function()
+      require("rose-pine").setup({
+        --dark_variant = 'moon',
+      })
+      vim.cmd("colorscheme rose-pine")
+    end,
   },
   --"projekt0n/github-nvim-theme",
   --"RRethy/nvim-base16", -- A bunch of color schemes based on base 16
