@@ -6,6 +6,9 @@ return {
   },
   {
     "rose-pine/neovim",
+    opts = {
+      dark_variant = 'moon',
+    },
     config = function() vim.cmd("colorscheme rose-pine") end,
   },
   --"projekt0n/github-nvim-theme",
