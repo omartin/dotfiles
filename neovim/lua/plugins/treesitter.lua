@@ -1,17 +1,33 @@
-local status_ok, configs = pcall(require, "nvim-treesitter.configs")
-if not status_ok then
-  print('treesitter unavailable')
-  return
-end
-
-configs.setup {
-  ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-  ignore_install = { "" }, -- List of parsers to ignore installing
-  highlight = {
-    enable = true, -- false will disable the whole extension
-    disable = { "" }, -- list of language that will be disabled
-    additional_vim_regex_highlighting = true,
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    event = "BufReadPost",
+    opts = {
+      sync_install = false,
+      highlight = { enable = true },
+      indent = { enable = true },
+      context_commentstring = { enable = true, enable_autocmd = false },
+      ensure_installed = {
+        "bash",
+        "help",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "regex",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
+      },
+    },
+    config = function(plugin, opts)
+      require("nvim-treesitter.configs").setup(opts)
+    end,
   },
-  indent = { enable = true, disable = { "yaml" } },
 }

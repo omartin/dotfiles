@@ -17,7 +17,7 @@ local options = {
   splitright = true,                       -- force all vertical splits to go to the right of current window
   swapfile = false,                        -- creates a swapfile
   termguicolors = true,                    -- set term gui colors (most terminals support this)
-  timeoutlen = 100,                        -- time to wait for a mapped sequence to complete (in milliseconds)
+  timeoutlen = 800,                        -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo
   updatetime = 300,                        -- faster completion (4000ms default)
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
@@ -32,7 +32,6 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- lines of context
   sidescrolloff = 8,
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
   showmatch = true,                        -- briefly show matching bracket
 }
 
@@ -44,3 +43,7 @@ end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+
+vim.cmd [[set wildignore+=blue.vim,darkblue.vim,delek.vim,desert.vim,lunaperche.vim,quiet.vim,
+      \elflord.vim,evening.vim,industry.vim,koehler.vim,habamax.vim,morning.vim,murphy.vim,
+      \pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,zellner.vim]]

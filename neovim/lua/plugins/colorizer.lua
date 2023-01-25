@@ -1,7 +1,8 @@
-local status_ok, colorizer = pcall(require, "colorizer")
-if not status_ok then
-  print('colorizer unavailable')
-  return
-end
-
-colorizer.setup()
+return {
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup()
+    end
+  }
+}

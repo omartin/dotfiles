@@ -1,105 +1,108 @@
-local status_ok, telescope = pcall(require, "telescope")
-if not status_ok then
-  print('telescope unavailable')
-  return
-end
+return {
+  "nvim-telescope/telescope.nvim",
 
-local actions = require "telescope.actions"
-local trouble = require "trouble.providers.telescope"
-
-telescope.setup {
-  defaults = {
-
-    prompt_prefix = "  ",
-    selection_caret = "❯ ",
-    path_display = { "smart" },
-    sorting_strategy = "ascending",
-
+  opts = {
+    defaults = {
+      prompt_prefix = "  ",
+      selection_caret = "❯ ",
+      path_display = { "smart" },
+      sorting_strategy = "ascending",
+    },
     mappings = {
       i = {
-        ["<C-n>"] = actions.cycle_history_next,
-        ["<C-p>"] = actions.cycle_history_prev,
-
-        ["<C-j>"] = actions.move_selection_next,
-        ["<C-k>"] = actions.move_selection_previous,
-
-        ["<C-c>"] = actions.close,
-
-        ["<Down>"] = actions.move_selection_next,
-        ["<Up>"] = actions.move_selection_previous,
-
-        ["<CR>"] = actions.select_default,
-        ["<C-x>"] = actions.select_horizontal,
-        ["<C-v>"] = actions.select_vertical,
-        --["<C-t>"] = actions.select_tab,
-        ["<C-t>"] = trouble.open_with_trouble,
-
-        ["<C-u>"] = actions.preview_scrolling_up,
-        ["<C-d>"] = actions.preview_scrolling_down,
-
-        ["<PageUp>"] = actions.results_scrolling_up,
-        ["<PageDown>"] = actions.results_scrolling_down,
-
-        ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
-        ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
-        ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
-        ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
-        ["<C-l>"] = actions.complete_tag,
-        ["<C-_>"] = actions.which_key, -- keys from pressing <C-/>
+        ["<c-t>"] = function(...)
+          return require("trouble.providers.telescope").open_with_trouble(...)
+        end,
       },
+    },
+    pickers = {
+      colorscheme = { enable_preview = true },
+    },
+  },
 
-      n = {
-        ["<esc>"] = actions.close,
-        ["<CR>"] = actions.select_default,
-        ["<C-x>"] = actions.select_horizontal,
-        ["<C-v>"] = actions.select_vertical,
-        --["<C-t>"] = actions.select_tab,
-        ["<C-t>"] = trouble.open_with_trouble,
+  keys = {
+    { "<leader>f", "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>", desc = "Find files" },
+    { "<leader>F", "<cmd>Telescope live_grep theme=ivy<cr>", desc = "Live grep files" },
+    { "<leader>sc", "<cmd>Telescope colorscheme<cr>", desc = "Colorscheme" },
+    { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Find Help" },
+    { "<leader>sr", "<cmd>Telescope lsp_references<cr>", desc = "References" },
+    { "<leader>sd", "<cmd>Telescope lsp_definitions<cr>", desc = "Definitions" },
+    { "<leader>gs", "<cmd>Telescope git_status<cr>", desc = "Status" },
+  },
 
-        ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
-        ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
-        ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
-        ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
-
-        ["j"] = actions.move_selection_next,
-        ["k"] = actions.move_selection_previous,
-        ["H"] = actions.move_to_top,
-        ["M"] = actions.move_to_middle,
-        ["L"] = actions.move_to_bottom,
-
-        ["<Down>"] = actions.move_selection_next,
-        ["<Up>"] = actions.move_selection_previous,
-        ["gg"] = actions.move_to_top,
-        ["G"] = actions.move_to_bottom,
-
-        ["<C-u>"] = actions.preview_scrolling_up,
-        ["<C-d>"] = actions.preview_scrolling_down,
-
-        ["<PageUp>"] = actions.results_scrolling_up,
-        ["<PageDown>"] = actions.results_scrolling_down,
-
-        ["?"] = actions.which_key,
+  --[[
+  {
+    "nvim-telescope/telescope.nvim",
+    cmd = "Telescope",
+    version = false, -- telescope did only one release, so use HEAD for now
+    keys = {
+      { "<leader>,", "<cmd>Telescope buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },
+      { "<leader>/", Util.telescope("live_grep"), desc = "Find in Files (Grep)" },
+      { "<leader>:", "<cmd>Telescope command_history<cr>", desc = "Command History" },
+      { "<leader><space>", Util.telescope("files"), desc = "Find Files (root dir)" },
+      { "<leader>fF", Util.telescope("files", { cwd = false }), desc = "Find Files (cwd)" },
+      { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
+      { "<leader>ff", Util.telescope("files"), desc = "Find Files (root dir)" },
+      { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent" },
+      { "<leader>gc", "<cmd>Telescope git_commits<CR>", desc = "commits" },
+      { "<leader>gs", "<cmd>Telescope git_status<CR>", desc = "status" },
+      { "<leader>sC", "<cmd>Telescope commands<cr>", desc = "Commands" },
+      { "<leader>sG", Util.telescope("live_grep", { cwd = false }), desc = "Grep (cwd)" },
+      { "<leader>sM", "<cmd>Telescope man_pages<cr>", desc = "Man Pages" },
+      { "<leader>sa", "<cmd>Telescope autocommands<cr>", desc = "Auto Commands" },
+      { "<leader>sb", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Buffer" },
+      { "<leader>sc", "<cmd>Telescope command_history<cr>", desc = "Command History" },
+      { "<leader>sg", Util.telescope("live_grep"), desc = "Grep (root dir)" },
+      { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "Help Pages" },
+      { "<leader>sH", "<cmd>Telescope highlights<cr>", desc = "Search Highlight Groups" },
+      { "<leader>sk", "<cmd>Telescope keymaps<cr>", desc = "Key Maps" },
+      { "<leader>sm", "<cmd>Telescope marks<cr>", desc = "Jump to Mark" },
+      { "<leader>so", "<cmd>Telescope vim_options<cr>", desc = "Options" },
+      { "<leader>st", "<cmd>Telescope builtin<cr>", desc = "Telescope" },
+      {
+        "<leader>ss",
+        Util.telescope("lsp_document_symbols", {
+          symbols = {
+            "Class",
+            "Function",
+            "Method",
+            "Constructor",
+            "Interface",
+            "Module",
+            "Struct",
+            "Trait",
+            "Field",
+            "Property",
+          },
+        }),
+        desc = "Goto Symbol",
+      },
+    },
+    opts = {
+      defaults = {
+        prompt_prefix = " ",
+        selection_caret = " ",
+        mappings = {
+          i = {
+            ["<c-t>"] = function(...)
+              return require("trouble.providers.telescope").open_with_trouble(...)
+            end,
+            ["<C-i>"] = function()
+              Util.telescope("find_files", { no_ignore = true })()
+            end,
+            ["<C-h>"] = function()
+              Util.telescope("find_files", { hidden = true })()
+            end,
+            ["<C-Down>"] = function(...)
+              return require("telescope.actions").cycle_history_next(...)
+            end,
+            ["<C-Up>"] = function(...)
+              return require("telescope.actions").cycle_history_prev(...)
+            end,
+          },
+        },
       },
     },
   },
-  pickers = {
-    colorscheme = {
-      enable_preview = true
-    },
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
-  },
-  extensions = {
-    -- Your extension configuration goes here:
-    -- extension_name = {
-    --   extension_config_key = value,
-    -- }
-    -- please take a look at the readme of the extension you want to configure
-  },
+  --]]
 }
-
