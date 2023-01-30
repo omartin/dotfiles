@@ -47,3 +47,10 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.cmd [[set wildignore+=blue.vim,darkblue.vim,delek.vim,desert.vim,lunaperche.vim,quiet.vim,
       \elflord.vim,evening.vim,industry.vim,koehler.vim,habamax.vim,morning.vim,murphy.vim,
       \pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,zellner.vim]]
+
+vim.cmd [[
+    let g:blamer_enabled = 1
+    let g:blamer_show_in_insert_modes = 0
+    let g:blamer_show_in_visual_modes = 0
+    let g:blamer_prefix = '    ■ '
+    ]]
