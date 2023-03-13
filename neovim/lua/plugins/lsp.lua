@@ -20,11 +20,12 @@ return {
       { 'L3MON4D3/LuaSnip' }, -- Required
       { 'rafamadriz/friendly-snippets' }, -- Optional
     },
+
     config =
     function()
       local lsp = require('lsp-zero').preset({
         name = 'recommended',
-        set_lsp_keymaps = true,
+        set_lsp_keymaps = false,
         manage_nvim_cmp = true,
         suggest_lsp_servers = true,
       })
@@ -34,5 +35,15 @@ return {
 
       lsp.setup()
     end,
-  }
+
+    keys = {
+      { "K", "<cmd>lua vim.lsp.buf.hover()<cr>", desc = "Signature" },
+      { "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", desc = "Go to definition" },
+      { "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>", desc = "Go to declaration" },
+      { "gr", "<cmd>lua vim.lsp.buf.references()<cr>", desc = "Go to references" },
+      { "gl", "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Line diagnostics" },
+      { "[d", "<cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Next diagnostics" },
+      { "]d", "<cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Previous diagnostics" },
+    },
+  },
 }
