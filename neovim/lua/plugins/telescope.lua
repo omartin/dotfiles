@@ -3,20 +3,38 @@ return {
 
   opts = {
     defaults = {
-      prompt_prefix = "  ",
-      selection_caret = "❯ ",
-      path_display = { "smart" },
-      sorting_strategy = "ascending",
-    },
-    mappings = {
-      i = {
-        ["<c-t>"] = function(...)
-          return require("trouble.providers.telescope").open_with_trouble(...)
-        end,
+      prompt_prefix = " ",
+      selection_caret = " ",
+      mappings = {
+        i = {
+          ["<c-t>"] = function(...)
+            return require("trouble.providers.telescope").open_with_trouble(...)
+          end,
+          ["<a-t>"] = function(...)
+            return require("trouble.providers.telescope").open_selected_with_trouble(...)
+          end,
+          ["<C-Down>"] = function(...)
+            return require("telescope.actions").cycle_history_next(...)
+          end,
+          ["<C-Up>"] = function(...)
+            return require("telescope.actions").cycle_history_prev(...)
+          end,
+          ["<C-f>"] = function(...)
+            return require("telescope.actions").preview_scrolling_down(...)
+          end,
+          ["<C-b>"] = function(...)
+            return require("telescope.actions").preview_scrolling_up(...)
+          end,
+        },
+        n = {
+          ["q"] = function(...)
+            return require("telescope.actions").close(...)
+          end,
+        },
       },
-    },
-    pickers = {
-      colorscheme = { enable_preview = true },
+      pickers = {
+        colorscheme = { enable_preview = true },
+      },
     },
   },
 
