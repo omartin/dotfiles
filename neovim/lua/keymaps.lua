@@ -24,6 +24,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<Leader>-", "<C-W>s", opts)
 keymap("n", "<Leader>|", "<C-W>v", opts)
+keymap("n", "<Up>", ":horizontal resize +2<CR>", opts)
+keymap("n", "<Down>", ":horizontal resize -2<CR>", opts)
+keymap("n", "<Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<Right>", ":vertical resize -2<CR>", opts)
 
 -- Misc
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
@@ -52,4 +56,3 @@ keymap("v", "p", '"_dP', opts)
 
 -- TERMINAL --
 keymap("t", "<Esc>", "<C-\\><C-n>", opts)
-
