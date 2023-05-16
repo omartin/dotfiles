@@ -1,4 +1,4 @@
-Install brew, oh-my-zsh
+Install brew, oh-my-zsh, nvm (plus Node versions)
 
 
 
