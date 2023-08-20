@@ -5,7 +5,7 @@ local plugins = {
     "alexghergh/nvim-tmux-navigation",
     init = function()
       require("nvim-tmux-navigation").setup {
-        disable_when_zoomed = true, -- defaults to false
+        disable_when_zoomed = true,
       }
     end,
     cmd = { "NvimTmuxNavigateLeft", "NvimTmuxNavigateRight","NvimTmuxNavigateUp","NvimTmuxNavigateDown" },
@@ -19,20 +19,21 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
-
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = overrides.treesitter,
   },
-
   {
     "NvChad/nvterm",
-    opts = overrides.nvterm
+    opts = overrides.nvterm,
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = overrides.nvimtree,
+  }
 }
 return plugins

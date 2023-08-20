@@ -49,4 +49,13 @@ M.nvterm = {
   }
 }
 
+M.nvimtree = {
+  git = {
+    enable = true,
+  },
+  filters = {
+    dotfiles = true,
+  }
+}
+
 return M
