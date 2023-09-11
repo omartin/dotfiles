@@ -12,6 +12,7 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "terraform",
   },
 }
 
@@ -26,6 +27,7 @@ M.mason = {
     "lua-language-server",
     "stylua",
     "typescript-language-server",
+    "terraform-ls",
   },
 }
 
