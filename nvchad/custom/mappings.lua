@@ -32,7 +32,14 @@ M.navigation = {
      ["<C-j>"] = {"<cmd> NvimTmuxNavigateDown <CR>", "Window down"},
      ["<C-k>"] = {"<cmd> NvimTmuxNavigateUp <CR>", "Window up"},
      ["<C-l>"] = {"<cmd> NvimTmuxNavigateRight <CR>", "Window right"},
-  }
+  },
+  t = {
+     ["<Esc><Esc>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
+     ["<C-h>"] = {"<cmd> NvimTmuxNavigateLeft <CR>", "Window left"},
+     ["<C-j>"] = {"<cmd> NvimTmuxNavigateDown <CR>", "Window down"},
+     ["<C-k>"] = {"<cmd> NvimTmuxNavigateUp <CR>", "Window up"},
+     ["<C-l>"] = {"<cmd> NvimTmuxNavigateRight <CR>", "Window right"},
+  },
 }
 
 M.buffer = {
