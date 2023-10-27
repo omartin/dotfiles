@@ -4,9 +4,6 @@ zmodload zsh/zprof
 # aliases
 source $ZSH_DIR/zsh-alias
 
-# prompt
-source $ZSH_DIR/zsh-prompt
-
 # options
 setopt no_share_history
 unsetopt share_history
@@ -14,6 +11,9 @@ unsetopt share_history
 # vim mode
 bindkey -v
 export KEYTIMEOUT=1
+
+# emacs bindings
+bindkey -e
 
 # vim mappings
 zmodload zsh/complist
@@ -28,9 +28,13 @@ zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 # completion
-autoload -U compinit; compinit
-_comp_options+=(globdots) # hidden files
 source $ZSH_DIR/completion/completion.zsh
+
+# nvm
+source $ZSH_DIR/zsh-nvm
+
+# prompt
+source $ZSH_DIR/zsh-prompt
 
 # local
 source ~/.zshrc-local
