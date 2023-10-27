@@ -30,7 +30,13 @@ bindkey -M menuselect '^xh' accept-and-hold                # Hold
 bindkey -M menuselect '^xn' accept-and-infer-next-history  # Next
 bindkey -M menuselect '^xu' undo                           # Undo
 
-autoload -U compinit; compinit
+#autoload -U compinit; compinit
+autoload -Uz compinit # do it only every 24 hour
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
 _comp_options+=(globdots) # With hidden files
 
 # Only work with the Zsh function vman
