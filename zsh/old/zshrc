@@ -1,0 +1,40 @@
+# uncomment for profiling
+zmodload zsh/zprof
+
+export ZSH_DIR=$HOME/.dotfiles/zsh
+
+# Main configuration
+export ZSH="/Users/olive/.oh-my-zsh"
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+
+# ZSH
+ZSH_THEME="sorin"
+DEFAULT_USER=olive
+DISABLE_AUTO_UPDATE="true"
+plugins=(evalcache git colored-man-pages vi-mode tmux zsh-autosuggestions zsh-auto-nvm-use)
+bindkey '  ' autosuggest-accept
+source $ZSH/oh-my-zsh.sh
+
+export EDITOR=nvim
+export FZF_DEFAULT_COMMAND='rg --files'
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+# Keep history per session
+setopt no_share_history
+unsetopt share_history
+
+# Specific config files
+source $ZSH_DIR/zsh-alias
+source $ZSH_DIR/zsh-kubectl
+
+# Local
+source ~/.zshrc-local
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/opt/mongodb-community@4.4/bin:$PATH"
+
+zprof > /tmp/zprof

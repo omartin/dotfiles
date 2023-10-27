@@ -1,42 +1,37 @@
-export ZSH_DIR=$HOME/.dotfiles/zsh
+# uncomment for profiling
+zmodload zsh/zprof
 
-# Main configuration
-export ZSH="/Users/olive/.oh-my-zsh"
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
+PROMPT='%F{cyan}%1d%f%B%F{green} ❯ %f%b'
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# aliases
+source $ZSH_DIR/zsh-alias
 
-# ZSH
-ZSH_THEME="sorin"
-DEFAULT_USER=olive
-DISABLE_AUTO_UPDATE="true"
-plugins=(evalcache git colored-man-pages vi-mode tmux zsh-autosuggestions zsh-auto-nvm-use)
-bindkey '  ' autosuggest-accept
-source $ZSH/oh-my-zsh.sh
-
-export EDITOR=nvim
-export FZF_DEFAULT_COMMAND='rg --files'
-export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
-
-# Keep history per session
+# options
 setopt no_share_history
 unsetopt share_history
 
-# Specific config files
-source $ZSH_DIR/zsh-alias
-source $ZSH_DIR/zsh-kubectl
+# vim mode
+bindkey -v
+export KEYTIMEOUT=1
 
-# Local
+# vim mappings
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
+# vim edit command line
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
+# completion
+autoload -U compinit; compinit
+_comp_options+=(globdots) # hidden files
+source $ZSH_DIR/completion.zsh
+
+# local
 source ~/.zshrc-local
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/usr/local/opt/mongodb-community@4.4/bin:$PATH"
 
-# bun completions
-[ -s "/Users/olive/.bun/_bun" ] && source "/Users/olive/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+zprof > /tmp/zprof

@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+export ZSH_DIR=$HOME/.dotfiles/zsh
+
+# editor
+export EDITOR='nvim'
+export VISUAL='nvim'
+export FZF_DEFAULT_COMMAND='rg --files'
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+#  zsh
+export HISTSIZE=10000
+export SAVEHIST=10000

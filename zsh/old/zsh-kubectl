@@ -1,0 +1,2 @@
+# !/bin/sh
+kubectl completion zsh > _kubectl
