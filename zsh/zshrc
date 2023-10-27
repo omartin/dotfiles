@@ -1,5 +1,5 @@
 # uncomment for profiling
-zmodload zsh/zprof
+#zmodload zsh/zprof
 
 # aliases
 source $ZSH_DIR/zsh-alias
@@ -39,4 +39,4 @@ source $ZSH_DIR/zsh-prompt
 # local
 source ~/.zshrc-local
 
-zprof > /tmp/zprof
+#zprof > /tmp/zprof
