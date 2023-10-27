@@ -1,10 +1,11 @@
 # uncomment for profiling
 zmodload zsh/zprof
 
-PROMPT='%F{cyan}%1d%f%B%F{green} ❯ %f%b'
-
 # aliases
 source $ZSH_DIR/zsh-alias
+
+# prompt
+source $ZSH_DIR/zsh-prompt
 
 # options
 setopt no_share_history
@@ -29,7 +30,7 @@ bindkey -M vicmd v edit-command-line
 # completion
 autoload -U compinit; compinit
 _comp_options+=(globdots) # hidden files
-source $ZSH_DIR/completion.zsh
+source $ZSH_DIR/completion/completion.zsh
 
 # local
 source ~/.zshrc-local

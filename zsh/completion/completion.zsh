@@ -102,5 +102,5 @@ zstyle ':completion:*' keep-prefix true
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
 ## For kubernetes
-source $ZSH_DIR/kubectl-completion/_kubectl
+source $ZSH_DIR/completion/_kubectl
 zstyle ':completion:*:*:kubectl:*' list-grouped false
