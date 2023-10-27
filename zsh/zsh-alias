@@ -1,5 +1,18 @@
-alias vi=nvim
-alias vim=nvim
-alias k=kubectl
+
+# shortcuts
+alias ..='cd ..'
+alias ...='cd ../..'
+alias dt='cd ~/Desktop'
+alias dl='cd ~/Downloads'
+alias dev='cd ~/dev'
+
+# tools
+alias l='ls -alh'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias vi='nvim'
+alias vim='nvim'
+alias k='kubectl'
 alias rgf='rg --files | rg'
 alias nr='npm run'
