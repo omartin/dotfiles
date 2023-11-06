@@ -14,4 +14,4 @@ setopt prompt_subst
 
 # Config for prompt. PS1 synonym.
 #prompt='%2/ $(git_branch_name) > '
-prompt='%F{cyan}%1d%f$(git_branch_name)%F{green} %B❯ %f%b'
+prompt='%F{blue}%1d%f$(git_branch_name)%F{green} %B❯ %f%b'

@@ -28,6 +28,8 @@ M.mason = {
     "stylua",
     "typescript-language-server",
     "terraform-ls",
+    "rust-analyzer",
+    "gopls",
   },
 }
 
