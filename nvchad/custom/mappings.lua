@@ -26,6 +26,7 @@ M.navigation = {
      ["<C-j>"] = {"<cmd> NvimTmuxNavigateDown <CR>", "Window down"},
      ["<C-k>"] = {"<cmd> NvimTmuxNavigateUp <CR>", "Window up"},
      ["<C-l>"] = {"<cmd> NvimTmuxNavigateRight <CR>", "Window right"},
+     ["<C-x>"] = {"<cmd> TroubleToggle <CR>", "Trouble"},
   },
   i = {
      ["<C-h>"] = {"<cmd> NvimTmuxNavigateLeft <CR>", "Window left"},

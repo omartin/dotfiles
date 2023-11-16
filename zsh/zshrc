@@ -9,8 +9,7 @@ setopt no_share_history
 unsetopt share_history
 
 # vim mode
-bindkey -v
-export KEYTIMEOUT=1
+set -o vi
 
 # emacs bindings
 bindkey -e

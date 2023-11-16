@@ -11,6 +11,13 @@ local plugins = {
     cmd = { "NvimTmuxNavigateLeft", "NvimTmuxNavigateRight","NvimTmuxNavigateUp","NvimTmuxNavigateDown" },
   },
 
+  {
+    "folke/trouble.nvim",
+    init = function()
+      require("trouble").setup {}
+    end,
+  },
+
   -- override plugin configs
   {
     "neovim/nvim-lspconfig",
