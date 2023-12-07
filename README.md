@@ -1,6 +1,6 @@
-Install brew, oh-my-zsh, nvm (plus Node versions)
-
-
+Install essentials : 
+* Setup Keyboard / 1Password / iCloud
+* brew, nvm (plus Node versions)
 
 dotfiles
 ```
