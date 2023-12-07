@@ -1,6 +1,6 @@
 Install essentials : 
 * Setup Keyboard / 1Password / iCloud
-* brew, nvm (plus Node versions)
+* brew : `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 dotfiles
 ```
