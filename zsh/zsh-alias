@@ -16,3 +16,8 @@ alias vim='nvim'
 alias k='kubectl'
 alias rgf='rg --files | rg'
 alias nr='npm run'
+
+# nvim confs
+alias lazy='NVIM_APPNAME=nvim-lazy nvim'
+alias astro='NVIM_APPNAME=AstroNvim nvim'
+

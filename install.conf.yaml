@@ -13,6 +13,7 @@
     ~/.alacritty.yml: alacritty/alacritty.yml
     ~/.config/kitty: kitty
     ~/.config/nvim/lua/custom: nvchad/custom
+    ~/.config/nvim-lazy: neovim/lazy
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
