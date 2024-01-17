@@ -14,6 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require 'options'
 require 'keymaps'
-require('lazy').setup('plugins', { defaults = { lazy = true } })
+require('lazy').setup('plugins', {
+  defaults = { lazy = true },
+  change_detection = { enabled = false },
+})
 
 vim.cmd('colorscheme darkplus')
