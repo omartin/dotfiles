@@ -13,7 +13,6 @@ opt.shortmess:append "sI"                     -- Hide default message
 opt.number = true           -- Show line number
 opt.showmatch = true        -- Highlight matching parenthesis
 opt.foldmethod = 'marker'   -- Enable folding (default 'foldmarker')
-opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
 opt.splitright = true       -- Vertical split to the right
 opt.splitbelow = true       -- Horizontal split to the bottom
 opt.ignorecase = true       -- Ignore case letters when search
@@ -26,11 +25,12 @@ opt.pumheight = 15          -- Pop up menu maximum height
 opt.cursorline = true       -- Highlight the current line
 opt.wrap = false            -- Display lines as one long line
 
+--opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
 --opt.showmode = false      -- Hide current edition mode ex. -- INSERT
 --opt.showtabline = 2       -- Always show tabs
 --opt.signcolumn = 'yes'    -- Always show the sign column, otherwise it would shift the text each time
---opt.scrolloff = 8,                           -- lines of context
---opt.sidescrolloff = 8,
+--opt.scrolloff = 8         -- lines of context
+--opt.sidescrolloff = 8
 
 -- Tabs, indent
 opt.expandtab = true        -- Use spaces instead of tabs

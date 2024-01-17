@@ -35,12 +35,6 @@ keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 -- Hide search highlight
 keymap("n", "<Esc><Esc>", "<Esc>:nohlsearch<CR><Esc>", opts)
 
--- Resize with arrows
-keymap("n", "<S-Up>", ":resize +2<CR>", opts)
-keymap("n", "<S-Down>", ":resize -2<CR>", opts)
-keymap("n", "<S-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<S-Right>", ":vertical resize +2<CR>", opts)
-
 -- Navigate buffers
 keymap("n", "<Leader><Leader>", "<c-^>", opts)
 
@@ -48,11 +42,14 @@ keymap("n", "<Leader><Leader>", "<c-^>", opts)
 --keymap("n", "<Tab>", ":tabnext<CR>", opts)
 --keymap("n", "<S-Tab>", ":tabprevious<CR>", opts)
 
--- VISUAL --
--- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
-keymap("v", "p", '"_dP', opts)
-
 -- TERMINAL --
-keymap("t", "<Esc>", "<C-\\><C-n>", opts)
+keymap("t", "<Esc><Esc>", "<C-\\><C-n>", opts)
+
+-- FROM NVCHAD
+--["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+--["<C-x>"] = {"<cmd> TroubleToggle <CR>", "Trouble"},
+--["<Leader><Tab>"] = {"<cmd> tabnext <CR>", "Next Tab"},
+--["<Leader><S-Tab>"] = {"<cmd> tabprevious <CR>", "Previous Tab"},
+--["T"] = {"<cmd> tabnew <CR>", "New Tab"},
+--["<Esc><Esc>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
+--["<C-t>"] = { function() require("nvterm.terminal").toggle "float" end, "Toggle floating term" },

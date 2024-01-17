@@ -16,4 +16,4 @@ require 'options'
 require 'keymaps'
 require('lazy').setup('plugins', { defaults = { lazy = true } })
 
-vim.cmd('colorscheme rose-pine-moon')
+vim.cmd('colorscheme darkplus')
