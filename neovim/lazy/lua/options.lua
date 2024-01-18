@@ -1,3 +1,4 @@
+-- Inspired from https://github.com/brainfucksec/neovim-lua/blob/main/nvim/lua/core/options.lua
 -- Neovim options
 local opt = vim.opt         -- Set options (global/buffer/windows-scoped)
 
@@ -24,11 +25,11 @@ opt.cmdheight = 1           -- Cmd line height
 opt.pumheight = 15          -- Pop up menu maximum height
 opt.cursorline = true       -- Highlight the current line
 opt.wrap = false            -- Display lines as one long line
+opt.signcolumn = 'yes'      -- Always show the sign column to avoid flickering
 
 --opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
 --opt.showmode = false      -- Hide current edition mode ex. -- INSERT
 --opt.showtabline = 2       -- Always show tabs
---opt.signcolumn = 'yes'    -- Always show the sign column, otherwise it would shift the text each time
 --opt.scrolloff = 8         -- lines of context
 --opt.sidescrolloff = 8
 
