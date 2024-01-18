@@ -19,4 +19,4 @@ require('lazy').setup('plugins', {
   change_detection = { enabled = false },
 })
 
-vim.cmd('colorscheme darkplus')
+vim.cmd('colorscheme ferrum')

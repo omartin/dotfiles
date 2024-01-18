@@ -29,9 +29,6 @@ keymap("n", "<Down>", ":horizontal resize -2<CR>", opts)
 keymap("n", "<Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<Right>", ":vertical resize -2<CR>", opts)
 
--- Misc
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-
 -- Hide search highlight
 keymap("n", "<Esc><Esc>", "<Esc>:nohlsearch<CR><Esc>", opts)
 
