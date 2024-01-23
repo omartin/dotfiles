@@ -1,5 +1,5 @@
 return {
-  'VonHeikemen/lsp-zero.nvim', 
+  'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',
   event = 'VeryLazy',
   dependencies = {
@@ -12,11 +12,11 @@ return {
   },
 
   config = function()
+    -- LSP
     local lsp = require('lsp-zero')
     lsp.on_attach(function(_, bufnr)
       lsp.default_keymaps({buffer = bufnr})
     end)
-
     lsp.set_sign_icons({
       error = '󰅙',
       warn = '',
@@ -24,6 +24,7 @@ return {
       info = '»'
     })
 
+    -- MASON
     require('mason').setup({})
     require('mason-lspconfig').setup({
       ensure_installed = {
@@ -39,6 +40,22 @@ return {
       },
       handlers = { lsp.default_setup },
     })
+
+    -- CMP
+    local cmp = require('cmp')
+    local cmp_action = require('lsp-zero').cmp_action()
+    cmp.setup({
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+      },
+      mapping = cmp.mapping.preset.insert({
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<Tab>'] = cmp_action.luasnip_supertab(),
+        ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
+      })
+    })
+
   end,
 
   keys = {

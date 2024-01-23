@@ -1,5 +1,7 @@
 return {
+  { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
   { 'folke/tokyonight.nvim', event = 'VeryLazy' },
+  { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
 
   --[[
   { 'Shatur/neovim-ayu', event = 'VeryLazy' },
