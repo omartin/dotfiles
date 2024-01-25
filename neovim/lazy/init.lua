@@ -22,4 +22,4 @@ require('lazy').setup('plugins', {
   change_detection = { enabled = false },
 })
 
-vim.cmd('colorscheme deku')
+vim.cmd('colorscheme hybrid')

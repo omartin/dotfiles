@@ -9,6 +9,7 @@ opt.swapfile = false                          -- Don't create swapfile
 opt.completeopt = 'menuone,noinsert,noselect' -- Autocomplete options
 opt.undofile = true                           -- Enable persistent undo
 opt.shortmess:append "sI"                     -- Hide default message
+opt.fillchars:append { eob = ' ' }
 
 -- Neovim UI
 opt.number = true           -- Show line number

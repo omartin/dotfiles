@@ -32,12 +32,12 @@ keymap("n", "<Right>", ":vertical resize -2<CR>", opts)
 -- Hide search highlight
 keymap("n", "<Esc><Esc>", "<Esc>:nohlsearch<CR><Esc>", opts)
 
--- Navigate buffers
+-- Navigate buffers & Tabs
 keymap("n", "<Leader><Leader>", "<c-^>", opts)
-
--- Tabs
---keymap("n", "<Tab>", ":tabnext<CR>", opts)
---keymap("n", "<S-Tab>", ":tabprevious<CR>", opts)
+keymap("n", "<Tab>", ":bnext<CR>", opts)
+keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
+keymap("n", "<Leader><Tab>", ":tabnext<CR>", opts)
+keymap("n", "<Leader><S-Tab>", ":tabprevious<CR>", opts)
 
 -- TERMINAL --
 keymap("t", "<Esc><Esc>", "<C-\\><C-n>", opts)
