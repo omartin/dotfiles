@@ -22,4 +22,4 @@ require('lazy').setup('plugins', {
   change_detection = { enabled = false },
 })
 
-vim.cmd('colorscheme hybrid')
+vim.cmd('colorscheme tokyonight-night')
