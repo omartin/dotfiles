@@ -4,12 +4,13 @@ return {
   dependencies = {
     'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }
+    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
   },
   cmd = 'Telescope',
-  opts = function()
+  config = function ()
+    local telescope = require('telescope')
     local actions = require('telescope.actions')
-    return {
+    telescope.setup {
       defaults = {
         prompt_prefix = "  ",
         selection_caret = " ",
@@ -26,5 +27,5 @@ return {
         colorscheme = { previewer = false, enable_preview = true, layout_config = { width = 0.5 } },
       }
     }
-  end
+  end,
 }
