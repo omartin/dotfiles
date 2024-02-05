@@ -8,9 +8,6 @@ source $ZSH_DIR/zsh-alias
 setopt no_share_history
 unsetopt share_history
 
-# vim mode
-set -o vi
-
 # emacs bindings
 bindkey -e
 
@@ -37,5 +34,8 @@ source $ZSH_DIR/zsh-prompt
 
 # local
 source ~/.zshrc-local
+
+# vi mode
+set -o vi
 
 #zprof > /tmp/zprof

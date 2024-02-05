@@ -1,4 +1,5 @@
 return {
+  { 'catppuccin/nvim', event = 'VeryLazy' },
   { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
   { 'folke/tokyonight.nvim', event = 'VeryLazy' },
   { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
@@ -11,7 +12,6 @@ return {
   { 'savq/melange-nvim', event = 'VeryLazy' },
   { 'LunarVim/horizon.nvim', event = 'VeryLazy' },
   { 'ellisonleao/gruvbox.nvim', event = 'VeryLazy' },
-  { 'catppuccin/nvim', event = 'VeryLazy' },
   { 'gbprod/nord.nvim', event = 'VeryLazy' },
   { 'rafi/awesome-vim-colorschemes', event = 'VeryLazy' },
   { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },

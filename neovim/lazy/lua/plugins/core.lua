@@ -18,4 +18,9 @@ return {
       scope = { enabled = false },
     },
   },
+  {
+    'tiagovla/scope.nvim',
+    event = 'VeryLazy',
+    opts = {},
+  },
 }
