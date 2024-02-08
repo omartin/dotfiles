@@ -42,12 +42,3 @@ keymap("n", "<Leader>x", ":bdelete<CR>", opts)
 
 -- TERMINAL --
 keymap("t", "<Esc><Esc>", "<C-\\><C-n>", opts)
-
--- FROM NVCHAD
---["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
---["<C-x>"] = {"<cmd> TroubleToggle <CR>", "Trouble"},
---["<Leader><Tab>"] = {"<cmd> tabnext <CR>", "Next Tab"},
---["<Leader><S-Tab>"] = {"<cmd> tabprevious <CR>", "Previous Tab"},
---["T"] = {"<cmd> tabnew <CR>", "New Tab"},
---["<Esc><Esc>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
---["<C-t>"] = { function() require("nvterm.terminal").toggle "float" end, "Toggle floating term" },
