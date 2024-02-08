@@ -3,6 +3,7 @@ return {
   { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
   { 'folke/tokyonight.nvim', event = 'VeryLazy' },
   { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
+  { 'rose-pine/neovim', event = 'VeryLazy' },
 
   --[[
   { 'Shatur/neovim-ayu', event = 'VeryLazy' },
@@ -15,7 +16,6 @@ return {
   { 'gbprod/nord.nvim', event = 'VeryLazy' },
   { 'rafi/awesome-vim-colorschemes', event = 'VeryLazy' },
   { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },
-  { 'rose-pine/neovim', event = 'VeryLazy' },
   { 'projekt0n/github-nvim-theme', event = 'VeryLazy' },
   { 'LunarVim/horizon.nvim', event = 'VeryLazy' },
   { 'luisiacc/gruvbox-baby', event = 'VeryLazy' },
