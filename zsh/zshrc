@@ -8,9 +8,6 @@ source $ZSH_DIR/zsh-alias
 setopt no_share_history
 unsetopt share_history
 
-# emacs bindings
-bindkey -e
-
 # vim mappings
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
@@ -18,10 +15,16 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
+# vi mode
+set -o vi
+
 # vim edit command line
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+
+# emacs style
+bindkey '^P' up-line-or-search
 
 # completion
 source $ZSH_DIR/completion/completion.zsh
@@ -34,8 +37,5 @@ source $ZSH_DIR/zsh-prompt
 
 # local
 source ~/.zshrc-local
-
-# vi mode
-set -o vi
 
 #zprof > /tmp/zprof

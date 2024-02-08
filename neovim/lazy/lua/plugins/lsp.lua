@@ -31,7 +31,7 @@ return {
         'cssls',
         'docker_compose_language_service',
         'dockerls',
-        'eslint',
+        --'eslint',
         'lua_ls',
         'html',
         'rust_analyzer',
