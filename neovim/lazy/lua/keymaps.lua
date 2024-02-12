@@ -40,5 +40,10 @@ keymap("n", "<Leader><Tab>", ":tabnext<CR>", opts)
 keymap("n", "<Leader><S-Tab>", ":tabprevious<CR>", opts)
 keymap("n", "<Leader>x", ":bdelete<CR>", opts)
 
+-- Comments
+keymap("n", "<Leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
+keymap("v", "<Leader>/", "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", opts)
+
+
 -- TERMINAL --
 keymap("t", "<Esc><Esc>", "<C-\\><C-n>", opts)
