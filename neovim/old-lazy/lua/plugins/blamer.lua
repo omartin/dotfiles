@@ -1,6 +1,0 @@
-return {
-  {
-    "APZelos/blamer.nvim",
-  }
-}
-

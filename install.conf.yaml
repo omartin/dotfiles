@@ -10,10 +10,11 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
-    ~/.alacritty.yml: alacritty/alacritty.yml
+    ~/.alacritty.toml: alacritty/alacritty.toml
     ~/.config/kitty: kitty
     ~/.config/nvim/lua/custom: nvchad/custom
     ~/.config/nvim-lazy: neovim/lazy
+    ~/.config/nvim-new: neovim/new
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

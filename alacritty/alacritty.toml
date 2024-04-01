@@ -1,0 +1,34 @@
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.primary]
+background = "#1c1c1c"
+foreground = "#c5c8c6"
+
+[font]
+size = 13.5
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+chars = """
+clear
+"""
+key = "K"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0000"
+key = "Space"
+mods = "Control"
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "none"
+dynamic_title = true
+startup_mode = "Fullscreen"

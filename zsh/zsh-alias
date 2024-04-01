@@ -11,13 +11,12 @@ alias l='ls -alh'
 alias la='ls -lAh'
 alias ll='ls -lh'
 alias ls='ls -G'
-alias vi='nvim'
-alias vim='nvim'
 alias k='kubectl'
 alias rgf='rg --files | rg'
 alias nr='npm run'
 
 # nvim confs
-alias lazy='NVIM_APPNAME=nvim-lazy nvim'
+alias vi='NVIM_APPNAME=nvim-lazy nvim'
+alias new='NVIM_APPNAME=nvim-new nvim'
 alias astro='NVIM_APPNAME=AstroNvim nvim'
 
