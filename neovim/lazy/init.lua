@@ -22,7 +22,7 @@ require('lazy').setup('plugins', {
   change_detection = { enabled = false },
 })
 
-vim.cmd('colorscheme tokyonight')
+vim.cmd('colorscheme kanagawa')
 
 vim.api.nvim_create_autocmd({ 'BufEnter', 'BufNewFile' }, {
   pattern = '.env*',
