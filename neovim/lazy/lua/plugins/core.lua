@@ -2,7 +2,7 @@ return {
   {
     'christoomey/vim-tmux-navigator',
     event = 'VeryLazy',
-    keys = { "<C-h>", "<C-j>", "<C-j>", "<C-l>" }
+    keys = { "<C-h>", "<C-j>", "<C-j>", "<C-l>" },
   },
   {
     'lewis6991/gitsigns.nvim',
@@ -34,6 +34,6 @@ return {
     event = 'VeryLazy',
     config = function()
       require('nvim-surround').setup()
-    end
+    end,
   },
 }
