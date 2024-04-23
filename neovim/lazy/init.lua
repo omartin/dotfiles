@@ -1,4 +1,4 @@
--- Bootstrap Plugin Manager
+-- Lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -12,11 +12,19 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+
 require 'options'
 require 'keymaps'
-require('lazy').setup(
-  'plugins',
-  {
-    change_detection = { enabled = false }
-  }
-)
+require('lazy').setup('plugins', {
+  defaults = { lazy = true },
+  change_detection = { enabled = false },
+})
+
+vim.cmd('colorscheme kanagawa')
+
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufNewFile' }, {
+  pattern = '.env*',
+  command = 'set filetype=conf',
+})
