@@ -73,11 +73,12 @@ return {
   end,
 
   keys = {
-    { 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', desc = '(LSP) Go to definition' },
+    { 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = '(LSP) Go to definition' },
     { 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', desc = '(LSP) Go to declaration' },
-    { 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', desc = '(LSP) Go to references' },
+    { 'gr', '<cmd>Telescope lsp_references<cr>', desc = '(LSP) Go to references' },
     { 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>', desc = '(LSP) Line diagnostics' },
     { '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', desc = '(LSP) Next diagnostics' },
     { ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', desc = '(LSP) Previous diagnostics' },
+    { 'gR', '<cmd>lua vim.lsp.buf.rename()<cr>', desc = '(LSP) Rename' },
   },
 }

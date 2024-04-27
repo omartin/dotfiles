@@ -19,7 +19,7 @@ return {
           horizontal = { prompt_position = 'top' },
         },
         mappings = {
-          i = { ["<Esc>"] = actions.close }
+          i = { ["<Esc>"] = actions.close },
         }
       },
       pickers = {

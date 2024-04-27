@@ -25,6 +25,9 @@ return {
         b = { '<cmd>Gitsigns blame_line<cr>', 'Blame line' },
         s = { '<cmd>Telescope git_status<cr>', 'Git status' },
       },
+      ['<Leader>o'] = {
+        name = ' Ollama',
+      },
     })
   end,
 }
