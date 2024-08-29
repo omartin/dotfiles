@@ -1,6 +1,7 @@
 return {
   'folke/which-key.nvim',
   event = 'VeryLazy',
+  dependencies = { 'echasnovski/mini.icons' },
   init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 500
@@ -19,6 +20,7 @@ return {
         w = { '<cmd>Telescope live_grep<cr>', 'Live grep' },
         t = { '<cmd>Telescope colorscheme<cr>', 'Find colorschemes' },
         o = { '<cmd>Telescope oldfiles<cr>', 'Old files' },
+        k = { '<cmd>Telescope keymaps<cr>', 'Keymaps' },
       },
       ['<Leader>g'] = {
         name = '󰊢 Git',

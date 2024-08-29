@@ -22,9 +22,10 @@ require('lazy').setup('plugins', {
   change_detection = { enabled = false },
 })
 
-vim.cmd('colorscheme kanagawa')
-
 vim.api.nvim_create_autocmd({ 'BufEnter', 'BufNewFile' }, {
   pattern = '.env*',
   command = 'set filetype=conf',
 })
+
+-- vim.cmd('colorscheme hybrid')
+vim.cmd('colorscheme nightfox')

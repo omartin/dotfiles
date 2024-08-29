@@ -5,6 +5,7 @@ alias ...='cd ../..'
 alias dt='cd ~/Desktop'
 alias dl='cd ~/Downloads'
 alias dev='cd ~/dev'
+alias oo='cd "/Users/olive/Library/Mobile Documents/iCloud~md~obsidian/Documents/main"'
 
 # tools
 alias l='ls -alh'
@@ -16,7 +17,8 @@ alias rgf='rg --files | rg'
 alias nr='npm run'
 
 # nvim confs
-alias vi='NVIM_APPNAME=nvim-lazy nvim'
+alias vi='lazy'
+alias lazy='NVIM_APPNAME=nvim-lazy nvim'
 alias new='NVIM_APPNAME=nvim-new nvim'
 alias astro='NVIM_APPNAME=AstroNvim nvim'
-
+alias nvchad='NVIM_APPNAME=nvim-nvchad nvim'

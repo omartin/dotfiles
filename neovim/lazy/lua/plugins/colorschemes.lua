@@ -5,6 +5,7 @@ return {
   { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
   { 'rose-pine/neovim', event = 'VeryLazy' },
   { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },
+  { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
 
   --[[
   { 'Shatur/neovim-ayu', event = 'VeryLazy' },

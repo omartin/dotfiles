@@ -44,6 +44,5 @@ keymap("n", "<Leader>x", ":bdelete<CR>", 'Delete buffer')
 keymap("n", "<Leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", 'Comment')
 keymap("v", "<Leader>/", "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", 'Comment')
 
-
 -- TERMINAL --
 keymap("t", "<Esc><Esc>", "<C-\\><C-n>", 'Echap')

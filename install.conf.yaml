@@ -12,9 +12,9 @@
     ~/.gitignore: git/gitignore
     ~/.alacritty.toml: alacritty/alacritty.toml
     ~/.config/kitty: kitty
-    ~/.config/nvim/lua/custom: nvchad/custom
     ~/.config/nvim-lazy: neovim/lazy
     ~/.config/nvim-new: neovim/new
+    ~/.config/nvim-nvchad: neovim/nvchad
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
