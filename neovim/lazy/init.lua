@@ -29,3 +29,5 @@ vim.api.nvim_create_autocmd({ 'BufEnter', 'BufNewFile' }, {
 
 -- vim.cmd('colorscheme hybrid')
 vim.cmd('colorscheme nightfox')
+
+vim.g.tmux_navigator_disable_when_zoomed = 1

@@ -28,9 +28,4 @@ return {
     opts = {},
     event = 'VeryLazy',
   },
-  -- {
-  --   'karb94/neoscroll.nvim',
-  --   event = 'VeryLazy',
-  --   opts = {},
-  -- }
 }
