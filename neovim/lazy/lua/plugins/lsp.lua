@@ -20,8 +20,8 @@ return {
     lsp.set_sign_icons({
       error = '󰅙',
       warn = '',
-      hint = '⚑',
-      info = '»'
+      hint = '',
+      info = '»',
     })
     lsp.configure('lua_ls', {
       cmd = { 'lua-language-server' },

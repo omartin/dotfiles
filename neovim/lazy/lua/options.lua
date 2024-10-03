@@ -29,7 +29,7 @@ opt.wrap = false            -- Display lines as one long line
 opt.signcolumn = 'yes'      -- Always show the sign column to avoid flickering
 opt.scrolloff = 999
 opt.virtualedit = 'block'
-opt.conceallevel = 1
+opt.conceallevel = 0
 
 --opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
 --opt.showmode = false      -- Hide current edition mode ex. -- INSERT
