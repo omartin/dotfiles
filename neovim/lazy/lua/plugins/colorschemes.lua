@@ -1,18 +1,19 @@
 return {
-  { 'catppuccin/nvim', event = 'VeryLazy' },
   { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
-  { 'folke/tokyonight.nvim', event = 'VeryLazy' },
-  { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
-  { 'rose-pine/neovim', event = 'VeryLazy' },
-  { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },
-  { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
-  { 'projekt0n/github-nvim-theme', event = 'VeryLazy' },
 
-  { 'LunarVim/Colorschemes', event = 'VeryLazy' },
-  { 'Shatur/neovim-ayu', event = 'VeryLazy' },
-  { 'sainnhe/sonokai', event = 'VeryLazy' },
-  { 'lewis6991/github_dark.nvim', event = 'VeryLazy' },
-  { 'cocopon/iceberg.vim', event = 'VeryLazy' },
+  -- { 'catppuccin/nvim', event = 'VeryLazy' },
+  -- { 'folke/tokyonight.nvim', event = 'VeryLazy' },
+  -- { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
+  -- { 'rose-pine/neovim', event = 'VeryLazy' },
+  -- { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },
+  -- { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
+  -- { 'projekt0n/github-nvim-theme', event = 'VeryLazy' },
+  --
+  -- { 'LunarVim/Colorschemes', event = 'VeryLazy' },
+  -- { 'Shatur/neovim-ayu', event = 'VeryLazy' },
+  -- { 'sainnhe/sonokai', event = 'VeryLazy' },
+  -- { 'lewis6991/github_dark.nvim', event = 'VeryLazy' },
+  -- { 'cocopon/iceberg.vim', event = 'VeryLazy' },
 
   --[[
   { 'LunarVim/horizon.nvim', event = 'VeryLazy' },

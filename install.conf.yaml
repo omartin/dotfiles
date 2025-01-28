@@ -11,6 +11,7 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.alacritty.toml: alacritty/alacritty.toml
+    ~/.config/ghostty: ghostty
     ~/.config/kitty: kitty
     ~/.config/nvim-lazy: neovim/lazy
     ~/.config/nvim-new: neovim/new

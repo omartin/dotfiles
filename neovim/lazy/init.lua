@@ -27,11 +27,11 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
 	command = "set filetype=conf",
 })
 
--- vim.cmd("colorscheme hybrid")
--- vim.cmd('colorscheme nightfox')
+vim.cmd("colorscheme hybrid")
+--vim.cmd('colorscheme nightfox')
 --vim.cmd('colorscheme github_dark_dimmed')
 --vim.cmd('colorscheme rose-pine')
-vim.cmd("colorscheme lunar")
--- vim.cmd("colorscheme catppuccin-macchiato")
+--vim.cmd("colorscheme catppuccin-macchiato")
+--vim.cmd("colorscheme lunar")
 
 vim.g.tmux_navigator_disable_when_zoomed = 1
