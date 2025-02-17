@@ -25,6 +25,7 @@ return {
       pickers = {
         find_files = { previewer = false },
         colorscheme = { previewer = false, enable_preview = true, layout_config = { width = 0.5 } },
+        live_grep = { additional_args = function() return { '--fixed-strings', '--smart-case' } end },
       }
     }
   end,
