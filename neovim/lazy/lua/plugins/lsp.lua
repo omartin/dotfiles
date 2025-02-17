@@ -50,7 +50,7 @@ return {
         'html',
         'rust_analyzer',
         'terraformls',
-        'tsserver'
+        'ts_ls'
       },
       handlers = { lsp.default_setup },
     })
