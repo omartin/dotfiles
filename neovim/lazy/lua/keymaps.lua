@@ -33,11 +33,12 @@ keymap("n", "<Right>", ":vertical resize -2<CR>", 'Resize vertical -')
 keymap("n", "<Esc><Esc>", "<Esc>:nohlsearch<CR><Esc>", 'Hide highlight')
 
 -- Buffers & Tabs
+keymap("n", "<S-h>", ":bprevious<CR>", 'Previous buffer')
+keymap("n", "<S-l>", ":bnext<CR>", 'Next buffer')
 keymap("n", "<Leader><Leader>", "<c-^>", 'Previous buffer')
-keymap("n", "<Tab>", ":bnext<CR>", 'Next buffer')
-keymap("n", "<S-Tab>", ":bprevious<CR>", 'Previous buffer')
-keymap("n", "<Leader><Tab>", ":tabnext<CR>", 'Next tab')
-keymap("n", "<Leader><S-Tab>", ":tabprevious<CR>", 'Previous tab')
+keymap("n", "<Leader><Tab>", ":tabnew<CR>", 'New tab')
+keymap("n", "<Tab>", ":tabnext<CR>", 'Next tab')
+keymap("n", "<S-Tab>", ":tabprevious<CR>", 'Previous tab')
 keymap("n", "<Leader>x", ":bdelete<CR>", 'Delete buffer')
 
 -- Comments

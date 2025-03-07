@@ -15,6 +15,31 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
 
+-- Custom tabline function showing only filenames
+function _G.custom_tabline()
+  local s = ''
+  for i = 1, vim.fn.tabpagenr('$') do
+    -- Select the highlighting
+    if i == vim.fn.tabpagenr() then
+      s = s .. '%#TabLineSel#'
+    else
+      s = s .. '%#TabLine#'
+    end
+    -- Add the tab number
+    s = s .. ' ' .. i .. ' '
+    -- Get the filename only of the first window in the tab
+    local buflist = vim.fn.tabpagebuflist(i)
+    local winnr = vim.fn.tabpagewinnr(i)
+    local bufnr = buflist[winnr]
+    local filename = vim.fn.fnamemodify(vim.fn.bufname(bufnr), ':t')
+    -- Add the filename
+    s = s .. (filename ~= '' and filename or '[No Name]') .. ' '
+  end
+  -- Fill the rest of the tabline with TabLineFill and reset tab page nr
+  return s .. '%#TabLineFill#%T'
+end
+vim.o.tabline = '%!v:lua.custom_tabline()'
+
 require("options")
 require("keymaps")
 require("lazy").setup("plugins", {

@@ -16,6 +16,7 @@ return {
     wk.add({
       { "<Leader>f", group = "Find" },
       { "<Leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+      { "<Leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
       { "<Leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
       { "<Leader>fm", "<cmd>Telescope marks<cr>", desc = "Marks" },
       { "<Leader>fo", "<cmd>Telescope oldfiles<cr>", desc = "Old files" },
