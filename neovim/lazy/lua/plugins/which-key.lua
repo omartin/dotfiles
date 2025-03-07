@@ -22,7 +22,11 @@ return {
       { "<Leader>ft", "<cmd>Telescope colorscheme<cr>", desc = "Find colorschemes" },
       { "<Leader>fw", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
       { "<Leader>fW", desc = "Live grep in subfolder", function()
-          require('telescope.builtin').live_grep({ cwd = vim.fn.input('Subfolder: ', vim.fn.expand('%:p:h') .. '/', 'file') })
+          vim.ui.input({ prompt = 'Subfolder: ', default = vim.fn.expand('%:p:h') .. '/' }, function(input)
+            if input then
+              vim.cmd('Telescope live_grep cwd=' .. input)
+            end
+          end)
         end
       },
       { "<Leader>fn", desc = "Live grep", function()
