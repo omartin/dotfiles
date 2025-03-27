@@ -80,5 +80,6 @@ return {
     { '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', desc = '(LSP) Next diagnostics' },
     { ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', desc = '(LSP) Previous diagnostics' },
     { 'gR', '<cmd>lua vim.lsp.buf.rename()<cr>', desc = '(LSP) Rename' },
+    { '<Leader>lf', '<cmd>lua vim.lsp.buf.format()<cr>', desc = '(LSP) Format document' },
   },
 }
