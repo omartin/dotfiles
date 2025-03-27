@@ -30,6 +30,7 @@ opt.signcolumn = 'yes'      -- Always show the sign column to avoid flickering
 opt.scrolloff = 999
 opt.virtualedit = 'block'
 opt.conceallevel = 0
+opt.guicursor = ''
 --opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
 --opt.showmode = false      -- Hide current edition mode ex. -- INSERT
 --opt.showtabline = 2       -- Always show tabs
