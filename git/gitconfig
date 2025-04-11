@@ -50,3 +50,5 @@
 [user]
 	name = Olivier Martin
 	email = olivier.martin@govirtuo.com
+[init]
+	defaultBranch = main
