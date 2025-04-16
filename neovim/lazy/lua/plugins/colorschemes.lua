@@ -1,16 +1,14 @@
 return {
   { 'thesimonho/kanagawa-paper.nvim', event = 'VeryLazy' },
-  { 'sainnhe/sonokai', event = 'VeryLazy' },
-
-  -- { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
+  { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
+  { 'folke/tokyonight.nvim', event = 'VeryLazy' },
+  { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
 
   -- { 'catppuccin/nvim', event = 'VeryLazy' },
-  -- { 'folke/tokyonight.nvim', event = 'VeryLazy' },
   -- { 'rose-pine/neovim', event = 'VeryLazy' },
 
   -- { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
   -- { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },
-  -- { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
   -- { 'projekt0n/github-nvim-theme', event = 'VeryLazy' },
   --
   -- { 'LunarVim/Colorschemes', event = 'VeryLazy' },

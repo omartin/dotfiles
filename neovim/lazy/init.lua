@@ -53,8 +53,9 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
 })
 
 --vim.cmd("colorscheme hybrid")
-vim.cmd('colorscheme kanagawa-paper')
---vim.cmd('colorscheme nightfox')
+-- vim.cmd('colorscheme kanagawa-paper')
+vim.cmd('colorscheme nightfox')
+
 --vim.cmd('colorscheme github_dark_dimmed')
 --vim.cmd('colorscheme rose-pine')
 --vim.cmd("colorscheme catppuccin-macchiato")
