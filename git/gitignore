@@ -29,7 +29,6 @@ tags
 # Logs and databases #
 ######################
 *.log
-*.sql
 
 # OS generated files #
 ######################
@@ -42,7 +41,6 @@ Thumbs.db
 #########
 *~.nib 
 *.pbxuser 
-*.mode* 
 *.perspective* 
 project.xcworkspace 
 *.xcuserstate
@@ -52,6 +50,5 @@ project.xcworkspace
 
 # Node #
 ########
-package-lock.json
 .vscode
 .env
