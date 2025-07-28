@@ -49,6 +49,6 @@
 	smudge = git-lfs smudge -- %f
 [user]
 	name = Olivier Martin
-	email = olivier.martin@govirtuo.com
+	email = olive.martin@gmail.com
 [init]
 	defaultBranch = main
