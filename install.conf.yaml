@@ -17,6 +17,7 @@
     ~/.config/nvim-new: neovim/new
     ~/.config/nvim-nvchad: neovim/nvchad
     ~/.config/nvim-tachikoma: neovim/tachikoma
+    ~/.claude/CLAUDE.md: ai/CLAUDE.md
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
