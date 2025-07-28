@@ -5,6 +5,7 @@
 source $ZSH_DIR/zsh-alias
 
 # options
+setopt IGNORE_EOF
 setopt no_share_history
 unsetopt share_history
 
@@ -29,9 +30,6 @@ bindkey '^P' up-line-or-search
 
 # completion
 source $ZSH_DIR/completion/completion.zsh
-
-# nvm
-source $ZSH_DIR/zsh-nvm
 
 # prompt
 source $ZSH_DIR/zsh-prompt

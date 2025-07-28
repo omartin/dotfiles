@@ -12,7 +12,7 @@ git clone https://github.com/omartin/dotfiles ~/.dotfiles && cd ~/.dotfiles && .
 
 3rd parties
 ```
-    brew install kitty neovim tmux
+    brew install asdf kitty neovim tmux
     brew install nvm ripgrep ag caarlos0/tap/timer gnu-sed fzf
     brew install quicklook-json --cask
     brew tap homebrew/cask-fonts && brew install --cask font-noto-nerd-font font-fira-code-nerd-font 

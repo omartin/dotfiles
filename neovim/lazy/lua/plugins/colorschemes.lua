@@ -3,6 +3,9 @@ return {
   { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
   { 'folke/tokyonight.nvim', event = 'VeryLazy' },
   { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
+  { 'Koalhack/darcubox-nvim', event = 'VeryLazy' },
+  { 'marko-cerovac/material.nvim', event = 'VeryLazy' },
+  { 'AlexvZyl/nordic.nvim', event = 'VeryLazy' },
 
   -- { 'catppuccin/nvim', event = 'VeryLazy' },
   -- { 'rose-pine/neovim', event = 'VeryLazy' },
