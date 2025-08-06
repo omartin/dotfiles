@@ -32,6 +32,9 @@ keymap("n", "<Right>", ":vertical resize -2<CR>", 'Resize vertical -')
 -- Hide search highlight
 keymap("n", "<Esc><Esc>", "<Esc>:nohlsearch<CR><Esc>", 'Hide highlight')
 
+-- Preserve clipboard when pasting
+keymap("v", "p", '"_dP', 'Paste without losing clipboard')
+
 -- Buffers & Tabs
 keymap("n", "<S-h>", ":bprevious<CR>", 'Previous buffer')
 keymap("n", "<S-l>", ":bnext<CR>", 'Next buffer')

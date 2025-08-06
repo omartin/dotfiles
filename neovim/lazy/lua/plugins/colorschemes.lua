@@ -7,8 +7,8 @@ return {
   { 'marko-cerovac/material.nvim', event = 'VeryLazy' },
   { 'AlexvZyl/nordic.nvim', event = 'VeryLazy' },
 
-  -- { 'catppuccin/nvim', event = 'VeryLazy' },
-  -- { 'rose-pine/neovim', event = 'VeryLazy' },
+  { 'catppuccin/nvim', event = 'VeryLazy' },
+  { 'rose-pine/neovim', event = 'VeryLazy' },
 
   -- { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
   -- { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },
