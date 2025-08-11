@@ -38,3 +38,6 @@ source $ZSH_DIR/zsh-prompt
 source ~/.zshrc-local
 
 #zprof > /tmp/zprof
+
+# opencode
+export PATH=/Users/olive/.opencode/bin:$PATH
