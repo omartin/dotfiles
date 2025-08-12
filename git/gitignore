@@ -52,3 +52,6 @@ project.xcworkspace
 ########
 .vscode
 .env
+
+# Claude #
+settings.local.json
