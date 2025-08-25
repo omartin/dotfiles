@@ -52,14 +52,14 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
 	command = "set filetype=conf",
 })
 
-vim.cmd('colorscheme nordic')
+vim.cmd("colorscheme catppuccin-mocha")
+-- vim.cmd('colorscheme nordic')
 -- vim.cmd('colorscheme material-darker')
 -- vim.cmd('colorscheme nightfox')
 --vim.cmd("colorscheme hybrid")
 -- vim.cmd('colorscheme kanagawa-paper')
 --vim.cmd('colorscheme github_dark_dimmed')
 --vim.cmd('colorscheme rose-pine')
---vim.cmd("colorscheme catppuccin-macchiato")
 --vim.cmd("colorscheme lunar")
 --vim.cmd('colorscheme tokyonight-storm')
 
