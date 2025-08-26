@@ -19,7 +19,9 @@ git clone https://github.com/omartin/dotfiles ~/.dotfiles && cd ~/.dotfiles && .
     brew install asdf kitty neovim tmux
     brew install ripgrep ag caarlos0/tap/timer gnu-sed fzf
     brew install quicklook-json --cask
-    brew install --cask font-noto-nerd-font font-fira-code-nerd-font 
+    brew install --cask font-noto-nerd-font font-fira-code-nerd-font
+    asdf plugin add nodejs
+    asdf install nodejs 18.20.8
     npm install -g typescript typescript-language-server diagnostic-languageserver eslint_d
 ```
 
