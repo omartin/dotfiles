@@ -22,6 +22,7 @@ git clone https://github.com/omartin/dotfiles ~/.dotfiles && cd ~/.dotfiles && .
     brew install --cask font-noto-nerd-font font-fira-code-nerd-font
     asdf plugin add nodejs
     asdf install nodejs 18.20.8
+    asdf global nodejs 18.20.8
     npm install -g typescript typescript-language-server diagnostic-languageserver eslint_d
 ```
 
