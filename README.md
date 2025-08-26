@@ -1,5 +1,10 @@
 Install essentials : 
-* Setup Keyboard / 1Password / iCloud
+* Setup
+    * iCloud
+    * Keyboard Layout
+    * 1Password
+    * Karabiner
+    * Alfred
 * brew : `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 * Docker : https://docs.docker.com/get-docker/
 
