@@ -55,3 +55,8 @@ project.xcworkspace
 
 # Claude #
 settings.local.json
+
+# Docker override files
+docker-compose.override.yml
+
+.tool-versions

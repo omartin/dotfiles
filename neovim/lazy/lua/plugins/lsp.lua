@@ -17,6 +17,7 @@ return {
     lsp.on_attach(function(_, bufnr)
       lsp.default_keymaps({buffer = bufnr})
     end)
+    lsp.extend_cmp({position_encoding = 'utf-16'})
     lsp.set_sign_icons({
       error = '󰅙',
       warn = '',
