@@ -23,6 +23,8 @@ git clone https://github.com/omartin/dotfiles ~/.dotfiles && cd ~/.dotfiles && .
     asdf plugin add nodejs
     asdf install nodejs 18.20.8 # ~/.tool-versions !
     npm install -g typescript typescript-language-server diagnostic-languageserver eslint_d
+    asdf plugin add java
+    asdf install java temurin-17.0.16+8 
 ```
 
 Finally

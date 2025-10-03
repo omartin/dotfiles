@@ -60,3 +60,4 @@ settings.local.json
 docker-compose.override.yml
 
 .tool-versions
+CLAUDE.md

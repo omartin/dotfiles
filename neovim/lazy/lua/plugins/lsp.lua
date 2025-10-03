@@ -24,21 +24,6 @@ return {
       hint = '',
       info = '»',
     })
-    lsp.configure('lua_ls', {
-      cmd = { 'lua-language-server' },
-      settings = {
-        Lua = {
-          runtime = {
-            version = 'LuaJIT',
-            path = vim.split(package.path, ';'),
-          },
-          diagnostics = {
-            globals = { 'vim' },
-          },
-        },
-      },
-    })
-
     -- MASON
     require('mason').setup({})
     require('mason-lspconfig').setup({
@@ -53,7 +38,24 @@ return {
         'terraformls',
         'ts_ls'
       },
-      handlers = { lsp.default_setup },
+      handlers = {
+        lsp.default_setup,
+        lua_ls = function()
+          require('lspconfig').lua_ls.setup({
+            settings = {
+              Lua = {
+                runtime = {
+                  version = 'LuaJIT',
+                  path = vim.split(package.path, ';'),
+                },
+                diagnostics = {
+                  globals = { 'vim' },
+                },
+              },
+            },
+          })
+        end,
+      },
     })
 
     -- CMP

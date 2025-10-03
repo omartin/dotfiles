@@ -17,6 +17,7 @@ alias rgf='rg --files | rg'
 alias nr='npm run'
 alias tf='terraform'
 alias llm='find . -type f \( -name "*.ts" -o -name "*.swift" -o -name "*.kt" -o -name "*.tsx" \) | sort | xargs -I{} sh -c "echo \"### {}\"; cat {}; echo \"\n\"" | pbcopy'
+alias ip='ipconfig getifaddr en0'
 
 # nvim confs
 alias vi='lazy'
