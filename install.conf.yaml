@@ -13,8 +13,7 @@
     ~/.alacritty.toml: alacritty/alacritty.toml
     ~/.config/ghostty: ghostty
     ~/.config/kitty: kitty
-    ~/.config/nvim-lazy: neovim/lazy
-    ~/.config/nvim-new: neovim/new
+    ~/.config/nvim: neovim/lazy
     ~/.config/nvim-nvchad: neovim/nvchad
     ~/.config/nvim-tachikoma: neovim/tachikoma
     ~/.claude/CLAUDE.md: ai/CLAUDE.md

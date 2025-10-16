@@ -20,9 +20,8 @@ alias llm='find . -type f \( -name "*.ts" -o -name "*.swift" -o -name "*.kt" -o 
 alias ip='ipconfig getifaddr en0'
 
 # nvim confs
-alias vi='lazy'
-alias lazy='NVIM_APPNAME=nvim-lazy nvim'
-alias new='NVIM_APPNAME=nvim-new nvim'
+alias vi='nvim'
+alias nvim='NVIM_APPNAME=nvim nvim'
 alias astro='NVIM_APPNAME=AstroNvim nvim'
 alias nvchad='NVIM_APPNAME=nvim-nvchad nvim'
 alias tachikoma='NVIM_APPNAME=nvim-tachikoma nvim'
