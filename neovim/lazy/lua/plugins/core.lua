@@ -28,4 +28,5 @@ return {
     opts = {},
     event = 'VeryLazy',
   },
+  { 'kevinhwang91/nvim-bqf', ft = 'qf' }
 }

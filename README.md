@@ -27,6 +27,12 @@ git clone https://github.com/omartin/dotfiles ~/.dotfiles && cd ~/.dotfiles && .
     asdf install java temurin-17.0.16+8 
 ```
 
+MCP
+```
+claude mcp add context7 -- npx -y @upstash/context7-mcp
+claude mcp add githug -- npx -y @modelcontextprotocol/server-github
+```
+
 Finally
 ```
 sudo git config --system user.email "foo@bar.com"
