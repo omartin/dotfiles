@@ -20,6 +20,11 @@ return {
         },
         mappings = {
           i = { ["<Esc>"] = actions.close },
+        },
+        file_ignore_patterns = {
+          -- "%.json$",
+          "motor%-admin%.yml$",
+          "drizzle/meta/.*",
         }
       },
       pickers = {
