@@ -56,6 +56,8 @@ vim.api.nvim_create_autocmd('ColorScheme', {
   callback = function()
     vim.api.nvim_set_hl(0, 'NormalFloat', { link = 'Normal' })
     vim.api.nvim_set_hl(0, 'FloatBorder', { link = 'Comment' })
+    vim.api.nvim_set_hl(0, '@markup.raw.block', { link = 'Normal' })
+    vim.api.nvim_set_hl(0, '@markup.raw', { link = 'Normal' })
   end,
 })
 vim.cmd("colorscheme hybrid")
