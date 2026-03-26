@@ -16,6 +16,9 @@ return {
     local lsp = require('lsp-zero')
     lsp.on_attach(function(_, bufnr)
       lsp.default_keymaps({buffer = bufnr})
+      vim.keymap.set('n', 'K', function()
+        vim.lsp.buf.hover({ border = 'rounded', max_width = 80 })
+      end, { buffer = bufnr })
     end)
     lsp.extend_cmp({position_encoding = 'utf-16'})
     lsp.set_sign_icons({

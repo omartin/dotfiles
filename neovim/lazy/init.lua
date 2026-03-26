@@ -52,6 +52,12 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
 	command = "set filetype=conf",
 })
 
+vim.api.nvim_create_autocmd('ColorScheme', {
+  callback = function()
+    vim.api.nvim_set_hl(0, 'NormalFloat', { link = 'Normal' })
+    vim.api.nvim_set_hl(0, 'FloatBorder', { link = 'Comment' })
+  end,
+})
 vim.cmd("colorscheme hybrid")
 -- vim.cmd("colorscheme catppuccin-mocha")
 -- vim.cmd('colorscheme nordic')
