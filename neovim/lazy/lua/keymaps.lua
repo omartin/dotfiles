@@ -45,8 +45,8 @@ keymap("n", "<S-Tab>", ":tabprevious<CR>", 'Previous tab')
 keymap("n", "<Leader>x", ":bdelete<CR>", 'Delete buffer')
 
 -- Comments
-keymap("n", "<Leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", 'Comment')
-keymap("v", "<Leader>/", "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", 'Comment')
+vim.keymap.set("n", "<Leader>/", "gcc", { desc = 'Comment', remap = true })
+vim.keymap.set("v", "<Leader>/", "gc", { desc = 'Comment', remap = true })
 
 -- TERMINAL --
 keymap("t", "<Esc><Esc>", "<C-\\><C-n>", 'Echap')

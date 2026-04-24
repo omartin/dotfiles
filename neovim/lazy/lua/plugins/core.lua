@@ -23,9 +23,4 @@ return {
     event = 'VeryLazy',
     opts = {},
   },
-  {
-    'numToStr/Comment.nvim',
-    opts = {},
-    event = 'VeryLazy',
-  },
 }
