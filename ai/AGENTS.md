@@ -15,6 +15,7 @@
   1. file
   2. exact location
   3. exact code to add/replace
+- Prefer the smallest self-contained replacement block. Do not send orphan lines or fragments.
 - Stop after each step and wait for confirmation.
 
  ## What To Avoid
@@ -24,6 +25,7 @@
 - Long generic explanations
 - Multiple steps when only one was requested
 - Recommendations not verified against the code
+- Ambiguous patch fragments that rely on the user to infer placement
 
  ## Preferred Workflow
 
