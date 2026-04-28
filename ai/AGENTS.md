@@ -39,3 +39,11 @@
 - Technical
 - Minimal
 - No fluff
+
+ ## Runtime / Sensitive Access
+
+ - Never connect to any database, queue, cache, local service, cloud service, or external API without explicit user authorization in the current turn.
+ - Never inspect runtime data from user-provided IDs by default.
+ - Default to static code analysis only.
+ - Do not request escalation for DB/network/runtime access unless the user explicitly asks for that access.
+ - If runtime verification would help, stop and ask first.
