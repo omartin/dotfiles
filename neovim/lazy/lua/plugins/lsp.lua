@@ -83,8 +83,8 @@ return {
     { 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', desc = '(LSP) Go to declaration' },
     { 'gr', '<cmd>Telescope lsp_references<cr>', desc = '(LSP) Go to references' },
     { 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>', desc = '(LSP) Line diagnostics' },
-    { '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', desc = '(LSP) Next diagnostics' },
-    { ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', desc = '(LSP) Previous diagnostics' },
+    { '[d', '<cmd>lua vim.diagnostic.jump({count=-1})<cr>', desc = '(LSP) Previous diagnostic' },
+    { ']d', '<cmd>lua vim.diagnostic.jump({count=1})<cr>', desc = '(LSP) Next diagnostic' },
     { 'gR', '<cmd>lua vim.lsp.buf.rename()<cr>', desc = '(LSP) Rename' },
   },
 }
