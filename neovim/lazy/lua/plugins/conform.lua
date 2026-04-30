@@ -3,7 +3,7 @@ return {
   event = 'BufWritePre',
   keys = {
     { '<Leader>lf', function()
-      require('conform').format({ async = true, lsp_fallback = true })
+      require('conform').format({ async = true, lsp_format = 'fallback' })
     end, desc = '(LSP) Format document' },
   },
   opts = {
