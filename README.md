@@ -22,7 +22,7 @@ git clone https://github.com/omartin/dotfiles ~/.dotfiles && cd ~/.dotfiles && .
     brew install --cask font-noto-nerd-font font-fira-code-nerd-font
     asdf plugin add nodejs
     asdf install nodejs 18.20.8 # ~/.tool-versions !
-    npm install -g typescript typescript-language-server diagnostic-languageserver eslint_d
+    npm install -g typescript typescript-language-server diagnostic-languageserver eslint_d tree-sitter
     asdf plugin add java
     asdf install java temurin-17.0.16+8 
 ```
