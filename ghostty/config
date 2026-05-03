@@ -1,2 +1,7 @@
-font-family = "FiraCode Mono"
-font-size = 13
+font-family = FiraMono Nerd Font
+font-size = 13.5
+adjust-cell-height = 30%
+font-thicken = true
+theme = Iceberg Dark
+background = #1c1c1c
+keybind = cmd+k=text:clear\n
