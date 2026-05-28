@@ -2,7 +2,7 @@
 
 ## Critical Rules
 
-- *NO MODIFICATION on you own* unless explicitely asked, always propose a detailed but concise plan to the user
+- *NO MODIFICATION on you own* unless explicitely asked
 - NEVER remove, simplify, or restructure existing configuration without explicit approval
 - ALWAYS preserve full functionality — no regressions or breakage allowed
 - When modifying workflows or config files, retain all existing parameters unless explicitly told otherwise
