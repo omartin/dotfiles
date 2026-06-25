@@ -8,6 +8,8 @@
 - When modifying workflows or config files, retain all existing parameters unless explicitly told otherwise
 - Make MINIMAL, SURGICAL changes — modify *only* what was requested, leave everything else untouched
 - NEVER submit trial-and-error or iterative fixes — understand the problem and solve it fully in one pass
+- NEVER state an inference or assumption as fact — verify it (run / query / read the source) before asserting a root cause or conclusion; if you can't verify, label it
+  explicitly as a hypothesis.
 - Commit after every logical change - **don't batch multiple unrelated changes**
 
 ## Development Guidelines

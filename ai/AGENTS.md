@@ -1,47 +1,36 @@
-## Interaction Style
-- Do not modify code unless the user explicitly authorizes it.
-- Treat `OK`, `GO`, `k`, and similar replies as approval to continue, not
-permission to edit.
-- Default to analysis, diffs, or exact snippets.
-- Keep scope narrow and changes surgical. Do not refactor unless explicitly
-requested.
-- Diagnose from the real code before proposing changes.
+# CLAUDE.md
 
-## Response Rules
-- Be concise.
-- If the user asks for steps, give one compile-safe step only.
-- For each step, provide exact location and minimal explanations
-- Prefer the smallest possible edit.
-- Fragments are allowed if the anchor is exact.
-- If 1 line is enough, return 1 line.
-- Group tiny dependent edits only when splitting them would break the code.
-- Minimize unchanged context aggressively.
-- Stop after each step and wait for confirmation.
-- No no-op changes.
+## Critical Rules
 
-## What To Avoid
-- Unsolicited edits
-- Broad refactors for local bugs
-- Long generic explanations
-- Multiple steps when one was requested
-- Recommendations not verified against the code
-- Ambiguous patch fragments
+- *NO MODIFICATION on you own* unless explicitely asked
+- NEVER remove, simplify, or restructure existing configuration without explicit approval
+- ALWAYS preserve full functionality — no regressions or breakage allowed
+- When modifying workflows or config files, retain all existing parameters unless explicitly told otherwise
+- Make MINIMAL, SURGICAL changes — modify *only* what was requested, leave everything else untouched
+- NEVER submit trial-and-error or iterative fixes — understand the problem and solve it fully in one pass
+- NEVER state an inference or assumption as fact — verify it (run / query / read the source) before asserting a root cause or conclusion; if you can't verify, label it
+  explicitly as a hypothesis.
+- Commit after every logical change - **don't batch multiple unrelated changes**
 
-## Preferred Workflow
-- Search the codebase first and reuse existing patterns.
-- Prioritize root-cause analysis over quick fixes.
-- Separate bug fix, cleanup, and refactor.
-- Check only directly affected regressions.
+## Development Guidelines
 
-## Tone
-- Direct
-- Technical
-- Minimal
+- Write all code in English
+- Minimize external dependencies
+- Favor simplicity and maintainability over complexity
+- NEVER add comments unless explicitly requested
+- NEVER use the `any` type in TypeScript — use safe, specific alternatives like `unknown` or `Record<string, unknown>`
+- NEVER hard-code environment-specific or sensitive values — always use environment variables or configuration files
+- ALWAYS add proper import statements at the top of files
+- Avoid unnecessary complexity — keep code lean, clear, and maintainable
+- NEVER use magic numbers — define constants with descriptive names
+- ALWAYS handle errors explicitly — avoid silent failures or swallowed exceptions
+- Prioritize root cause analysis over quick fixes
 
-## Runtime / Sensitive Access
-- Default to static code analysis only.
-- Do not access DBs, queues, caches, local services, cloud services, or external
-APIs without explicit authorization in the current turn.
-- Do not inspect runtime data from user-provided IDs by default.
-- If runtime verification would help, ask first.
+## Code Consistency
 
+- Follow existing code style and structure — do not introduce new paradigms or formatting without approval
+- Match surrounding naming, layout, and patterns when modifying code
+- Preserve file/folder structure and ordering — do not reorganize unless explicitly requested
+- Do not auto-format or re-indent existing code unless explicitly asked
+- Keep changes focused on one logical unit — avoid mixing unrelated modifications
+- **ALWAYS search the codebase first for existing solutions to similar problems** — if the project already solves a problem (e.g., client-side SDK usage, error handling pattern), reuse that exact approach instead of inventing a new one
