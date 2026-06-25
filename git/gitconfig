@@ -52,3 +52,5 @@
 	email = olive.martin@gmail.com
 [init]
 	defaultBranch = main
+[includeIf "gitdir:/Users/olive/dev/kolet/"]
+	path = ~/.gitconfig-kolet
