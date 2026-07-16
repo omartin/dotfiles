@@ -60,7 +60,10 @@ vim.api.nvim_create_autocmd('ColorScheme', {
     vim.api.nvim_set_hl(0, '@markup.raw', { link = 'Normal' })
   end,
 })
-vim.cmd("colorscheme hybrid")
+
+vim.cmd("colorscheme vague")
+
+-- vim.cmd("colorscheme hybrid")
 -- vim.cmd("colorscheme catppuccin-mocha")
 -- vim.cmd('colorscheme nordic')
 -- vim.cmd('colorscheme material-darker')

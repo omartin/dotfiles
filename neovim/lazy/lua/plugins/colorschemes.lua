@@ -1,7 +1,17 @@
 return {
   { 'catppuccin/nvim', event = 'VeryLazy' },
-
+  { 'sainnhe/gruvbox-material', event = 'VeryLazy' },
   { 'rebelot/kanagawa.nvim', event = 'VeryLazy' },
+  { 'vague-theme/vague.nvim', event = 'VeryLazy' },
+  { 'dgox16/oldworld.nvim', event = 'VeryLazy' },
+  { 'rmehri01/onenord.nvim', event = 'VeryLazy' },
+  { 'zenbones-theme/zenbones.nvim', event = 'VeryLazy' },
+  { 'savq/melange-nvim', event = 'VeryLazy' },
+  { 'rjshkhr/shadow.nvim', event = 'VeryLazy' },
+  { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
+
+
+
   { 'HoNamDuong/hybrid.nvim', event = 'VeryLazy' },
   { 'folke/tokyonight.nvim', event = 'VeryLazy' },
   { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
@@ -9,6 +19,8 @@ return {
   { 'marko-cerovac/material.nvim', event = 'VeryLazy' },
   { 'AlexvZyl/nordic.nvim', event = 'VeryLazy' },
   { 'rose-pine/neovim', event = 'VeryLazy' },
+
+
 
   -- { 'thesimonho/kanagawa-paper.nvim', event = 'VeryLazy' },
   -- { 'kaplanz/deku.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
@@ -21,12 +33,9 @@ return {
 
   --[[
   { 'LunarVim/horizon.nvim', event = 'VeryLazy' },
-  { 'savq/melange-nvim', event = 'VeryLazy' },
   { 'ellisonleao/gruvbox.nvim', event = 'VeryLazy' },
   { 'gbprod/nord.nvim', event = 'VeryLazy' },
   { 'rafi/awesome-vim-colorschemes', event = 'VeryLazy' },
-  { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
   { 'luisiacc/gruvbox-baby', event = 'VeryLazy' },
-  { 'rmehri01/onenord.nvim', event = 'VeryLazy' },
   --]]
 }
