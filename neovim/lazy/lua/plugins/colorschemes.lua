@@ -5,7 +5,7 @@ return {
   { 'vague-theme/vague.nvim', event = 'VeryLazy' },
   { 'dgox16/oldworld.nvim', event = 'VeryLazy' },
   { 'rmehri01/onenord.nvim', event = 'VeryLazy' },
-  { 'zenbones-theme/zenbones.nvim', event = 'VeryLazy' },
+  { 'zenbones-theme/zenbones.nvim', dependencies = 'rktjmp/lush.nvim', event = 'VeryLazy' },
   { 'savq/melange-nvim', event = 'VeryLazy' },
   { 'rjshkhr/shadow.nvim', event = 'VeryLazy' },
   { 'EdenEast/nightfox.nvim', event = 'VeryLazy' },
