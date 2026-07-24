@@ -2,6 +2,12 @@ font-family = FiraMono Nerd Font
 font-size = 13.5
 adjust-cell-height = 30%
 font-thicken = true
+font-thicken-strength = 180
 theme = Iceberg Dark
 background = #1c1c1c
-keybind = cmd+k=text:clear\n
+foreground = #c5c8c6
+palette = 0=#161821
+cursor-color = #d2d4de
+selection-background = #1e2132
+selection-foreground = #c6c8d1
+keybind = cmd+k=clear_screen
