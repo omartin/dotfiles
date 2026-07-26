@@ -1,0 +1,17 @@
+onboarding = false
+
+[theme]
+name = "terminal"
+
+[ui]
+host_cursor = "drawn"
+show_agent_labels_on_pane_borders = false
+
+[keys]
+prefix = "ctrl+space"
+
+[ui.toast]
+delivery = "herdr"
+
+[experimental]
+pane_history = false
