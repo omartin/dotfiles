@@ -9,6 +9,7 @@ show_agent_labels_on_pane_borders = false
 
 [keys]
 prefix = "ctrl+space"
+split_vertical = "prefix+|"
 
 [ui.toast]
 delivery = "herdr"
