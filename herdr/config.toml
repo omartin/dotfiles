@@ -9,6 +9,8 @@ show_agent_labels_on_pane_borders = false
 
 [keys]
 prefix = "ctrl+space"
+previous_workspace = "prefix+ctrl+h"
+next_workspace = "prefix+ctrl+l"
 split_vertical = "prefix+|"
 
 [ui.toast]
