@@ -1,3 +1,4 @@
 .python-version
 lazy-lock.json
 settings.local.json
+.DS_Store

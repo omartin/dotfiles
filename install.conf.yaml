@@ -14,9 +14,7 @@
     ~/.config/ghostty: ghostty
     ~/.config/kitty: kitty
     ~/.config/herdr/config.toml: herdr/config.toml
-    ~/.config/nvim: neovim/lazy
-    ~/.config/nvim-nvchad: neovim/nvchad
-    ~/.config/nvim-tachikoma: neovim/tachikoma
+    ~/.config/nvim: neovim
     ~/.claude/CLAUDE.md: ai/CLAUDE.md
     ~/.claude/skills: ai/skills
 
