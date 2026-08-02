@@ -3,9 +3,23 @@ onboarding = false
 [theme]
 name = "terminal"
 
+[theme.custom]
+accent = "#5f6f8f"      # Softer theme highlights.
+
 [ui]
 host_cursor = "drawn"
 show_agent_labels_on_pane_borders = false
+# sidebar_start_collapsed = true        # Start Herdr with the sidebar collapsed.
+sidebar_collapsed_mode = "hidden"     # Hide the collapsed sidebar completely.
+hide_tab_bar_when_single_tab = true   # Hide the tab row when only one tab exists.
+pane_borders = false                  # Remove borders around split panes.
+pane_gaps = false                     # Avoid extra spacing between split panes.
+
+[ui.sidebar.spaces]
+row_gap = 1 
+
+[ui.sidebar.agents]
+row_gap = 1
 
 [keys]
 prefix = "ctrl+space"
