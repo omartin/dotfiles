@@ -2,6 +2,7 @@ onboarding = false
 
 [theme]
 name = "terminal"
+# name = "cattpuccin"
 
 [theme.custom]
 accent = "#5f6f8f"      # Softer theme highlights.
@@ -14,6 +15,8 @@ sidebar_collapsed_mode = "hidden"     # Hide the collapsed sidebar completely.
 hide_tab_bar_when_single_tab = true   # Hide the tab row when only one tab exists.
 pane_borders = false                  # Remove borders around split panes.
 pane_gaps = false                     # Avoid extra spacing between split panes.
+# pane_scrollbars = false
+# tab_bar_position = "bottom"
 
 [ui.sidebar.spaces]
 row_gap = 1 

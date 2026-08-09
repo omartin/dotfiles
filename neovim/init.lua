@@ -62,6 +62,7 @@ vim.api.nvim_create_autocmd('ColorScheme', {
 })
 
 vim.cmd("colorscheme vague")
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
 
 -- vim.cmd("colorscheme hybrid")
 -- vim.cmd("colorscheme catppuccin-mocha")

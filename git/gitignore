@@ -63,3 +63,7 @@ docker-compose.override.yml
 CLAUDE.md
 AGENTS.md
 .claude
+
+# Git Worktrees
+.claude/worktrees/
+.worktrees/

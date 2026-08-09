@@ -31,6 +31,12 @@ The ticket exists to **hand off a decision**, not to reopen the discussion.
 - Ignore thread coordination / social noise (who cc'd or tagged whom, "let's
   sync tomorrow", scheduling) and how the request surfaced (which tool routed
   it, who forwarded it). Keep only what helps someone build the thing.
+- Ignore staffing and logistics: who's assigned to build it, who's on
+  vacation/off, ticket-creation requests ("create this for next sprint").
+  The ticket should read as a record of the feature itself — someone opening
+  it in six months should learn what was built and why, not who was around
+  that week. "Validated by X" stays (it's the decision record); staffing
+  context around it doesn't.
 - If the thread only contains a proposal with **no clear validation** (no one
   said yes/go/OK/👍 or equivalent), stop and tell the user instead of creating
   the ticket — do not guess that silence means approval.
