@@ -1,4 +1,4 @@
--- Inspired from https://github.com/brainfucksec/neovim-lua/blob/main/nvim/lua/core/options.lua
+-- Inspired from https://github.com/brainfucksec/neovim-lua/blob/main/nvim/lua/config/options.lua
 -- Neovim options
 local opt = vim.opt         -- Set options (global/buffer/windows-scoped)
 

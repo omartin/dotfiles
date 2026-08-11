@@ -1,19 +1,14 @@
-
 # shortcuts
 alias ..='cd ..'
 alias ...='cd ../..'
-alias dt='cd ~/Desktop'
-alias dl='cd ~/Downloads'
-alias dev='cd ~/dev'
 alias oo='cd "/Users/olive/Library/Mobile Documents/iCloud~md~obsidian/Documents/main"'
-#alias claude="$HOME/.local/bin/claude"
+alias oh='cd "/Users/olive/Library/Mobile Documents/iCloud~md~obsidian/Documents/health"'
 
 # tools
 alias l='ls -alh'
 alias la='ls -lAh'
 alias ll='ls -lh'
 alias ls='ls -G'
-alias k='kubectl'
 alias rgf='rg --files | rg'
 alias nr='npm run'
 alias tf='terraform'
