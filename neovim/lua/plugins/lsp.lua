@@ -19,8 +19,10 @@ return {
             [vim.diagnostic.severity.INFO]  = '»',
           },
         },
-        virtual_lines = { current_line = true },
+        float = { border = 'rounded' },
       })
+
+      vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { desc = 'Line diagnostics' })
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(event)
