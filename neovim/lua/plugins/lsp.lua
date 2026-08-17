@@ -1,12 +1,12 @@
 return {
   { 'williamboman/mason.nvim', build = ':MasonUpdate', opts = {} },
-  { 'williamboman/mason-lspconfig.nvim' },
+  { 'neovim/nvim-lspconfig' },
   {
-    'neovim/nvim-lspconfig',
+    'williamboman/mason-lspconfig.nvim',
     event = 'VeryLazy',
     dependencies = {
       'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim',
+      'neovim/nvim-lspconfig',
       'hrsh7th/cmp-nvim-lsp',
     },
     config = function()
@@ -19,6 +19,7 @@ return {
             [vim.diagnostic.severity.INFO]  = '»',
           },
         },
+        virtual_lines = { current_line = true },
       })
 
       vim.api.nvim_create_autocmd('LspAttach', {
@@ -29,7 +30,18 @@ return {
         end,
       })
 
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      vim.lsp.config('*', {
+        capabilities = require('cmp_nvim_lsp').default_capabilities(),
+      })
+
+      vim.lsp.config('lua_ls', {
+        settings = {
+          Lua = {
+            runtime = { version = 'LuaJIT', path = vim.split(package.path, ';') },
+            diagnostics = { globals = { 'vim' } },
+          },
+        },
+      })
 
       require('mason-lspconfig').setup({
         ensure_installed = {
@@ -43,34 +55,8 @@ return {
           'terraformls',
           'ts_ls',
         },
-        handlers = {
-          function(server_name)
-            require('lspconfig')[server_name].setup({ capabilities = capabilities })
-          end,
-          lua_ls = function()
-            require('lspconfig').lua_ls.setup({
-              capabilities = capabilities,
-              settings = {
-                Lua = {
-                  runtime = { version = 'LuaJIT', path = vim.split(package.path, ';') },
-                  diagnostics = { globals = { 'vim' } },
-                },
-              },
-            })
-          end,
-        },
       })
     end,
-
-    keys = {
-      { 'gd', '<cmd>Telescope lsp_definitions<cr>',           desc = '(LSP) Go to definition' },
-      { 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>',       desc = '(LSP) Go to declaration' },
-      { 'gr', '<cmd>Telescope lsp_references<cr>',            desc = '(LSP) Go to references' },
-      { 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>',     desc = '(LSP) Line diagnostics' },
-      { '[d', '<cmd>lua vim.diagnostic.jump({count=-1})<cr>', desc = '(LSP) Previous diagnostic' },
-      { ']d', '<cmd>lua vim.diagnostic.jump({count=1})<cr>',  desc = '(LSP) Next diagnostic' },
-      { 'gR', '<cmd>lua vim.lsp.buf.rename()<cr>',            desc = '(LSP) Rename' },
-    },
   },
   {
     'hrsh7th/nvim-cmp',
