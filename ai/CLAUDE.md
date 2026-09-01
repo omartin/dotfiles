@@ -10,7 +10,7 @@
 - NEVER submit trial-and-error or iterative fixes — understand the problem and solve it fully in one pass
 - NEVER state an inference or assumption as fact — verify it (run / query / read the source) before asserting a root cause or conclusion; if you can't verify, label it
   explicitly as a hypothesis.
-- Commit after every logical change - **don't batch multiple unrelated changes**
+- **NEVER run `git commit`, `git push`, or `git tag`. NEVER propose or suggest committing/pushing. NEVER offer it as a next step.** The user handles all commits themselves. Read-only inspection (`git status`, `git diff`, `git log`) is fine. Writes to git history are 100% off-limits regardless of context.
 
 ## Development Guidelines
 
