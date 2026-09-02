@@ -29,6 +29,10 @@ return {
           vim.keymap.set('n', 'K', function()
             vim.lsp.buf.hover({ border = 'rounded', max_width = 80 })
           end, { buffer = event.buf })
+          vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<cr>',
+            { buffer = event.buf, desc = '(LSP) Go to definition' })
+          vim.keymap.set('n', 'gD', vim.lsp.buf.declaration,
+            { buffer = event.buf, desc = '(LSP) Go to declaration' })
         end,
       })
 
