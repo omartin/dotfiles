@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 ## Critical Rules
 
@@ -17,14 +17,10 @@
 - Write all code in English
 - Minimize external dependencies
 - Favor simplicity and maintainability over complexity
-- NEVER add comments unless explicitly requested
-- NEVER use the `any` type in TypeScript — use safe, specific alternatives like `unknown` or `Record<string, unknown>`
+- NEVER add/remove comments unless explicitly requested
 - NEVER hard-code environment-specific or sensitive values — always use environment variables or configuration files
-- ALWAYS add proper import statements at the top of files
-- Avoid unnecessary complexity — keep code lean, clear, and maintainable
 - NEVER use magic numbers — define constants with descriptive names
 - ALWAYS handle errors explicitly — avoid silent failures or swallowed exceptions
-- Prioritize root cause analysis over quick fixes
 
 ## Code Consistency
 
