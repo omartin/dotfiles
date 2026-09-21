@@ -13,7 +13,6 @@
     ~/.alacritty.toml: alacritty/alacritty.toml
     ~/.config/ghostty: ghostty
     ~/.config/kitty: kitty
-    ~/.config/herdr/config.toml: herdr/config.toml
     ~/.config/nvim: neovim
     ~/.claude/CLAUDE.md: ai/AGENTS.md
     ~/.claude/skills: ai/skills

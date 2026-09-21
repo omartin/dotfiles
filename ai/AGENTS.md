@@ -30,3 +30,7 @@
 - Do not auto-format or re-indent existing code unless explicitly asked
 - Keep changes focused on one logical unit — avoid mixing unrelated modifications
 - **ALWAYS search the codebase first for existing solutions to similar problems** — if the project already solves a problem (e.g., client-side SDK usage, error handling pattern), reuse that exact approach instead of inventing a new one
+
+## Skills
+
+When grilling, ask one question at a time.
