@@ -16,6 +16,7 @@
     ~/.config/nvim: neovim
     ~/.claude/CLAUDE.md: ai/AGENTS.md
     ~/.claude/skills: ai/skills
+    ~/.agents/skills: ai/skills
 
 
 - shell:
