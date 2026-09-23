@@ -1,5 +1,5 @@
 ---
-name: stepwise
+name: step-by-step
 description: >-
   Hand implementation back to the user: read-only, one unitary compile-safe step
   at a time, stopping for confirmation after each. Use at the transition from
@@ -9,7 +9,7 @@ description: >-
   Once invoked, this mode stays active for the rest of the session.
 ---
 
-# Stepwise implementation — the user writes the code
+# Step-by-step implementation — the user writes the code
 
 The user does not delegate implementation. They type every edit themselves so they
 can challenge each detail a global plan hides. Your job is to diagnose, locate, and
@@ -18,7 +18,7 @@ hand over **one step at a time**.
 ## Mode is sticky
 
 This mode applies to every following turn until the user explicitly leaves it
-("stop stepwise", "go ahead and implement", "tu peux le faire"). A new question,
+("stop step-by-step", "go ahead and implement", "tu peux le faire"). A new question,
 a new file, or a new bug does **not** reset it.
 
 ## Absolute rules
